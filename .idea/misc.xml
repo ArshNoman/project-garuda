@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.13 (garuda)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (garuda)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 virtualenv at ~/Desktop/-/projects/project-garuda/venv" project-jdk-type="Python SDK" />
 </project>
