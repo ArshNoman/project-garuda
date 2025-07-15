@@ -20,23 +20,23 @@ class OakDStream:
         self.device = None
         self.video_queue = None
 
-        def start(self):
-            # Start device and get output queue
-            print("[INFO] Starting Oak-D pipeline...")
-            self.device = dai.Device(self.pipeline)
-            self.video_queue = self.device.getOutputQueue(name="video", maxSize=4, blocking=False)
-            print("[INFO] Oak-D stream started.")
+    def start(self):
+        # Start device and get output queue
+        print("[INFO] Starting Oak-D pipeline...")
+        self.device = dai.Device(self.pipeline)
+        self.video_queue = self.device.getOutputQueue(name="video", maxSize=4, blocking=False)
+        print("[INFO] Oak-D stream started.")
 
-        def get_frame(self):
-            if self.video_queue:
-                in_frame = self.video_queue.get()
-                frame = in_frame.getCvFrame()
-                return frame
-            else:
-                return None
+    def get_frame(self):
+        if self.video_queue:
+            in_frame = self.video_queue.get()
+            frame = in_frame.getCvFrame()
+            return frame
+        else:
+            return None
 
-        def stop(self):
-            if self.device:
-                self.device.close()
-                print("[INFO] Oak-D stream stopped.")
+    def stop(self):
+        if self.device:
+            self.device.close()
+            print("[INFO] Oak-D stream stopped.")
 
