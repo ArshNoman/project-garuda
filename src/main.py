@@ -1,16 +1,19 @@
-from perception.oakd_stream import OakDStream
+# src/main.py
+from perception.tracking import ObjectTracker
 import cv2
 
-stream = OakDStream()
-stream.start()
+tracker = ObjectTracker()
+tracker.start()
 
 while True:
-    frame = stream.get_frame()
-    if frame is not None:
-        cv2.imshow("Oak-D Lite", frame)
+    frame, detections = tracker.get_detections()
+    cv2.imshow("Detections", frame)
+
+    for det in detections:
+        print(det)
 
     if cv2.waitKey(1) == ord('q'):
         break
 
+tracker.stop()
 cv2.destroyAllWindows()
-stream.stop()

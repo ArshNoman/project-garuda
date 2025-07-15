@@ -1,4 +1,5 @@
 import depthai as dai
+import blobconverter
 import cv2
 
 
@@ -12,7 +13,7 @@ class ObjectTracker:
         cam_rgb.setBoardSocket(dai.CameraBoardSocket.RGB)
 
         detection_nn = self.pipeline.createMobileNetDetectionNetwork()
-        detection_nn.setBlobPath(dai.BlobDownloader.fromZoo(name='mobilenet-ssd', shaves=6))
+        detection_nn.setBlobPath(blobconverter.from_zoo(name='mobilenet-ssd', shaves=6))
         detection_nn.setConfidenceThreshold(0.5)
 
         cam_rgb.preview.link(detection_nn.input)
