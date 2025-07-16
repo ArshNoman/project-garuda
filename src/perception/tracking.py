@@ -33,7 +33,7 @@ class ObjectTracker:
         cam_rgb.setColorOrder(dai.ColorCameraProperties.ColorOrder.BGR)
 
         detection_nn = self.pipeline.createYoloDetectionNetwork()
-        detection_nn.setBlobPath(blobconverter.from_zoo(name="yolov6n_coco_640x352", shaves=6))
+        detection_nn.setBlobPath("models/yolov6nr3_coco_640x352.blob")
         detection_nn.setConfidenceThreshold(0.5)
         detection_nn.setNumClasses(80)
         detection_nn.setCoordinateSize(4)
