@@ -112,9 +112,23 @@ class ObjectTracker:
             cx = (x1 + x2) // 2
             cy = (y1 + y2) // 2
 
-            # Depth in millimeters, convert to meters
-            depth_mm = depth_frame[cy, cx]
-            depth_m = depth_mm / 1000.0 if depth_mm > 0 else None
+            # mm to m
+            patch_size = 5
+            half = patch_size // 2
+            h, w = depth_frame.shape
+
+            # clamp window bounds to image size
+            x_start = max(cx - half, 0)
+            x_end = min(cx + half + 1, w)
+            y_start = max(cy - half, 0)
+            y_end = min(cy + half + 1, h)
+
+            depth_patch = depth_frame[y_start:y_end, x_start:x_end]
+            valid_depths = depth_patch[depth_patch > 0]  # filter out zeros
+
+            depth_m = None
+            if valid_depths.size > 0:
+                depth_m = np.median(valid_depths) / 1000.0  # convert mm → meters
 
             result = {
                 "label": label,
