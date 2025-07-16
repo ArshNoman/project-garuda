@@ -139,13 +139,17 @@ class ObjectTracker:
             }
             results.append(result)
 
-            # Draw
-            cv2.rectangle(frame, (x1, y1), (x2, y2), (0,255,0), 2)
-            text = f"{label} {det.confidence:.2f}"
-            if depth_m:
-                text += f" {depth_m:.2f}m"
-            cv2.putText(frame, text, (x1, y1 - 10),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+            # draw image
+            cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+
+            label_text = f"{label} ({det.confidence:.2f})"
+            cv2.putText(frame, label_text, (x1, y1 - 12),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+
+            if depth_m is not None:
+                dist_text = f"{depth_m:.2f} m"
+                cv2.putText(frame, dist_text, (x1, y2 + 15),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 1)
 
         return frame, results
 
