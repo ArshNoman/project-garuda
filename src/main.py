@@ -7,7 +7,7 @@ tracker.start()
 
 while True:
     frame, detections = tracker.get_detections()
-    cv2.imshow("Detections", frame)
+    cv2.imshow("YOLOv6 Detection", frame)
 
     for det in detections:
         print(det)
