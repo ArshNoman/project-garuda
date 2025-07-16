@@ -1,6 +1,9 @@
+# src/perception/tracking.py
+
 import depthai as dai
 import blobconverter
 import cv2
+import numpy as np
 
 class ObjectTracker:
     COCO_LABELS = {
@@ -26,12 +29,30 @@ class ObjectTracker:
     def __init__(self):
         self.pipeline = dai.Pipeline()
 
+        # Mono cameras (for stereo)
+        cam_left = self.pipeline.createMonoCamera()
+        cam_right = self.pipeline.createMonoCamera()
+        cam_left.setResolution(dai.MonoCameraProperties.SensorResolution.THE_400_P)
+        cam_left.setBoardSocket(dai.CameraBoardSocket.LEFT)
+        cam_right.setResolution(dai.MonoCameraProperties.SensorResolution.THE_400_P)
+        cam_right.setBoardSocket(dai.CameraBoardSocket.RIGHT)
+
+        # Stereo depth
+        stereo = self.pipeline.createStereoDepth()
+        stereo.setDefaultProfilePreset(dai.node.StereoDepth.PresetMode.HIGH_DENSITY)
+        cam_left.out.link(stereo.left)
+        cam_right.out.link(stereo.right)
+
+        # RGB camera
         cam_rgb = self.pipeline.createColorCamera()
         cam_rgb.setPreviewSize(640, 352)
         cam_rgb.setInterleaved(False)
         cam_rgb.setBoardSocket(dai.CameraBoardSocket.RGB)
         cam_rgb.setColorOrder(dai.ColorCameraProperties.ColorOrder.BGR)
+        cam_rgb.setResolution(dai.ColorCameraProperties.SensorResolution.THE_1080_P)
+        cam_rgb.setPreviewKeepAspectRatio(False)
 
+        # YOLOv6 detection network
         detection_nn = self.pipeline.createYoloDetectionNetwork()
         detection_nn.setBlobPath("models/yolov6nr3_coco_640x352.blob")
         detection_nn.setConfidenceThreshold(0.5)
@@ -46,9 +67,11 @@ class ObjectTracker:
             "side13": [6,7,8]
         })
         detection_nn.setIouThreshold(0.5)
+        detection_nn.input.setBlocking(False)
 
         cam_rgb.preview.link(detection_nn.input)
 
+        # Output links
         xout_rgb = self.pipeline.createXLinkOut()
         xout_rgb.setStreamName("rgb")
         cam_rgb.preview.link(xout_rgb.input)
@@ -57,19 +80,26 @@ class ObjectTracker:
         xout_nn.setStreamName("detections")
         detection_nn.out.link(xout_nn.input)
 
+        xout_depth = self.pipeline.createXLinkOut()
+        xout_depth.setStreamName("depth")
+        stereo.depth.link(xout_depth.input)
+
         self.device = None
         self.rgb_queue = None
         self.detection_queue = None
+        self.depth_queue = None
 
     def start(self):
         self.device = dai.Device(self.pipeline)
         self.rgb_queue = self.device.getOutputQueue(name="rgb", maxSize=4, blocking=False)
         self.detection_queue = self.device.getOutputQueue(name="detections", maxSize=4, blocking=False)
-        print("[INFO] YOLOv6 ObjectTracker started.")
+        self.depth_queue = self.device.getOutputQueue(name="depth", maxSize=4, blocking=False)
+        print("[INFO] ObjectTracker with Depth started.")
 
     def get_detections(self):
         frame = self.rgb_queue.get().getCvFrame()
         detections = self.detection_queue.get().detections
+        depth_frame = self.depth_queue.get().getFrame()
 
         results = []
         for det in detections:
@@ -82,17 +112,25 @@ class ObjectTracker:
             cx = (x1 + x2) // 2
             cy = (y1 + y2) // 2
 
+            # Depth in millimeters, convert to meters
+            depth_mm = depth_frame[cy, cx]
+            depth_m = depth_mm / 1000.0 if depth_mm > 0 else None
+
             result = {
                 "label": label,
                 "bbox": (x1, y1, x2, y2),
                 "center": (cx, cy),
+                "depth_m": depth_m,
                 "confidence": det.confidence
             }
             results.append(result)
 
-            # draw box
+            # Draw
             cv2.rectangle(frame, (x1, y1), (x2, y2), (0,255,0), 2)
-            cv2.putText(frame, f"{label} {det.confidence:.2f}", (x1, y1 - 10),
+            text = f"{label} {det.confidence:.2f}"
+            if depth_m:
+                text += f" {depth_m:.2f}m"
+            cv2.putText(frame, text, (x1, y1 - 10),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
 
         return frame, results
