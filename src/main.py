@@ -30,6 +30,3 @@ for i in range(10):
 
 slam.stop()
 
-
-# TEST COMMIT ON UBUNTU 24.02 VM
-

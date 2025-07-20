@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/ORB-SLAM3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/Pangolin" vcs="Git" />
   </component>
 </project>
