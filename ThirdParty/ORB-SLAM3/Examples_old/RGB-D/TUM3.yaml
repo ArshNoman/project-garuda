@@ -22,13 +22,13 @@ Camera.height: 480
 # Camera frames per second 
 Camera.fps: 30.0
 
-# IR projector baseline times fx (aprox.)
+# IR projector baseline times.txt fx (aprox.)
 Camera.bf: 40.0
 
 # Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
 Camera.RGB: 1
 
-# Close/Far threshold. Baseline times.
+# Close/Far threshold. Baseline times.txt.
 ThDepth: 40.0
 
 # Deptmap values factor

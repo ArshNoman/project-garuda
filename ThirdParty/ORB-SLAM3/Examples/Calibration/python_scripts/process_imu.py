@@ -33,7 +33,7 @@ class dataset:
         self.gyro = np.zeros((1, 4))
         self.timesCam = np.zeros((1, 1))
 
-        timesName = self.name + "/cam0/times.txt"
+        timesName = self.name + "/cam0/times.txt.txt"
         timeFile = open(timesName, "r")
         i = 0
         next = 0

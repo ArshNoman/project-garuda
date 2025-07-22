@@ -30,9 +30,9 @@ Camera.RGB: 1
 # Image scale, it changes the image size to be processed (<1.0: reduce, >1.0: increase)
 Camera.imageScale: 0.5 # 0.5 #0.7071 # 1/sqrt(2)
 
-# Close/Far threshold. Baseline times.
+# Close/Far threshold. Baseline times.txt.
 ThDepth: 40.0
-# stereo baseline times fx
+# stereo baseline times.txt fx
 Camera.bf: 18.143917436
 
 

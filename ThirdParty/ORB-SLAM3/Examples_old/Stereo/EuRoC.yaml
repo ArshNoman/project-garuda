@@ -36,13 +36,13 @@ Camera.height: 480
 # Camera frames per second 
 Camera.fps: 20.0
 
-# stereo baseline times fx
+# stereo baseline times.txt fx
 Camera.bf: 47.90639384423901
 
 # Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
 Camera.RGB: 1
 
-# Close/Far threshold. Baseline times.
+# Close/Far threshold. Baseline times.txt.
 ThDepth: 35.0 #35.0 #60.0
 
 #--------------------------------------------------------------------------------------------
