@@ -17,16 +17,50 @@
 # tracker.stop()
 # cv2.destroyAllWindows()
 
-from navigation.slam_module import SLAMModule
-import time
+def stream_to_disk():
+    import depthai as dai
+    import cv2
+    import os
+    import time
 
-slam = SLAMModule()
-slam.start()
+    left_dir = "../ThirdParty/ORB-SLAM3/live_stream/mav0/cam0/data"
+    right_dir = "../ThirdParty/ORB-SLAM3/live_stream/mav0/cam1/data"
+    os.makedirs(left_dir, exist_ok=True)
+    os.makedirs(right_dir, exist_ok=True)
 
-for i in range(10):
-    slam.update()  # frame will be passed here later
-    print(slam.get_pose())
-    time.sleep(0.5)
+    pipeline = dai.Pipeline()
+    left = pipeline.createMonoCamera()
+    right = pipeline.createMonoCamera()
+    left.setBoardSocket(dai.CameraBoardSocket.LEFT)
+    right.setBoardSocket(dai.CameraBoardSocket.RIGHT)
+    left.setResolution(dai.MonoCameraProperties.SensorResolution.THE_400_P)
+    right.setResolution(dai.MonoCameraProperties.SensorResolution.THE_400_P)
 
-slam.stop()
+    xout_left = pipeline.createXLinkOut()
+    xout_right = pipeline.createXLinkOut()
+    xout_left.setStreamName("left")
+    xout_right.setStreamName("right")
+    left.out.link(xout_left.input)
+    right.out.link(xout_right.input)
+
+    device = dai.Device(pipeline)
+    q_left = device.getOutputQueue("left", maxSize=1, blocking=False)
+    q_right = device.getOutputQueue("right", maxSize=1, blocking=False)
+
+    print("[INFO] Writing stereo frames...")
+
+    i = 0
+    while i < 30:
+        left_frame = q_left.get().getCvFrame()
+        right_frame = q_right.get().getCvFrame()
+
+        fname = f"{i:06d}.png"
+        cv2.imwrite(f"{left_dir}/{fname}", left_frame)
+        cv2.imwrite(f"{right_dir}/{fname}", right_frame)
+
+        i += 1
+        time.sleep(0.03)
+
+
+stream_to_disk()
 
