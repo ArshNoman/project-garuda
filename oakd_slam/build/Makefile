@@ -129,29 +129,29 @@ oakd_stereo_live/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/oakd_stereo_live.dir/build.make CMakeFiles/oakd_stereo_live.dir/build
 .PHONY : oakd_stereo_live/fast
 
-src/oakd_stereo_live.o: src/oakd_stereo_live.cpp.o
-.PHONY : src/oakd_stereo_live.o
+oakd_stereo_live.o: oakd_stereo_live.cpp.o
+.PHONY : oakd_stereo_live.o
 
 # target to build an object file
-src/oakd_stereo_live.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oakd_stereo_live.dir/build.make CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o
-.PHONY : src/oakd_stereo_live.cpp.o
+oakd_stereo_live.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oakd_stereo_live.dir/build.make CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.o
+.PHONY : oakd_stereo_live.cpp.o
 
-src/oakd_stereo_live.i: src/oakd_stereo_live.cpp.i
-.PHONY : src/oakd_stereo_live.i
+oakd_stereo_live.i: oakd_stereo_live.cpp.i
+.PHONY : oakd_stereo_live.i
 
 # target to preprocess a source file
-src/oakd_stereo_live.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oakd_stereo_live.dir/build.make CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.i
-.PHONY : src/oakd_stereo_live.cpp.i
+oakd_stereo_live.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oakd_stereo_live.dir/build.make CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.i
+.PHONY : oakd_stereo_live.cpp.i
 
-src/oakd_stereo_live.s: src/oakd_stereo_live.cpp.s
-.PHONY : src/oakd_stereo_live.s
+oakd_stereo_live.s: oakd_stereo_live.cpp.s
+.PHONY : oakd_stereo_live.s
 
 # target to generate assembly for a file
-src/oakd_stereo_live.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oakd_stereo_live.dir/build.make CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.s
-.PHONY : src/oakd_stereo_live.cpp.s
+oakd_stereo_live.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oakd_stereo_live.dir/build.make CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.s
+.PHONY : oakd_stereo_live.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... oakd_stereo_live"
-	@echo "... src/oakd_stereo_live.o"
-	@echo "... src/oakd_stereo_live.i"
-	@echo "... src/oakd_stereo_live.s"
+	@echo "... oakd_stereo_live.o"
+	@echo "... oakd_stereo_live.i"
+	@echo "... oakd_stereo_live.s"
 .PHONY : help
 
 

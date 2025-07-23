@@ -1,11 +1,10 @@
-cmake_minimum_required(VERSION 3.14)
-project(oakd_slam)
+cmake_minimum_required(VERSION 3.10)
+project(oakd_stereo_live)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 14)
 
-# === Find required packages ===
 find_package(OpenCV REQUIRED)
-find_package(Threads REQUIRED)
+find_package(Pangolin REQUIRED)
 
 # === Include directories ===
 include_directories(
@@ -27,27 +26,10 @@ include_directories(
     ${OpenCV_INCLUDE_DIRS}
 )
 
-# === Source files ===
-file(GLOB_RECURSE SRC_FILES src/*.cpp)
 
-# === Build executable ===
-add_executable(oakd_stereo_live ${SRC_FILES})
-
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(LIBUSB REQUIRED libusb-1.0)
-
-include_directories(${LIBUSB_INCLUDE_DIRS})
-target_link_libraries(oakd_stereo_live ${LIBUSB_LIBRARIES})
-
-
-link_directories(
-    ${PROJECT_SOURCE_DIR}/../ThirdParty/ORB-SLAM3/lib
-)
-
-# === Link libraries ===
+add_executable(oakd_stereo_live oakd_stereo_live.cpp)
 target_link_libraries(oakd_stereo_live
-    ORB_SLAM3
     ${OpenCV_LIBS}
-    Threads::Threads
-    usb-1.0
+    ${Pangolin_LIBRARIES}
+    ${PROJECT_SOURCE_DIR}/../ThirdParty/ORB-SLAM3/lib/libORB_SLAM3.so
 )

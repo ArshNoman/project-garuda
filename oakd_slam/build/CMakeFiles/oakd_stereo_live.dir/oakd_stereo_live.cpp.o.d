@@ -1,88 +1,91 @@
-CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o: \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/src/oakd_stereo_live.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
- /usr/include/c++/13/bits/requires_hosted.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
- /usr/include/features.h /usr/include/features-time64.h \
+CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.o: \
+ /home/parallels/Desktop/projects/project-garuda/oakd_slam/oakd_stereo_live.cpp \
+ /usr/include/stdc-predef.h \
+ /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/System.h \
+ /usr/include/unistd.h /usr/include/features.h \
+ /usr/include/features-time64.h \
  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
  /usr/include/aarch64-linux-gnu/bits/timesize.h \
  /usr/include/aarch64-linux-gnu/sys/cdefs.h \
  /usr/include/aarch64-linux-gnu/bits/long-double.h \
  /usr/include/aarch64-linux-gnu/gnu/stubs.h \
  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/cpu_defines.h \
- /usr/include/c++/13/pstl/pstl_config.h /usr/include/c++/13/ostream \
- /usr/include/c++/13/ios /usr/include/c++/13/iosfwd \
- /usr/include/c++/13/bits/stringfwd.h \
- /usr/include/c++/13/bits/memoryfwd.h /usr/include/c++/13/bits/postypes.h \
- /usr/include/c++/13/cwchar /usr/include/wchar.h \
- /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
- /usr/include/aarch64-linux-gnu/bits/floatn.h \
- /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
- /usr/include/aarch64-linux-gnu/bits/wchar.h \
- /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
- /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
- /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/c++/13/exception /usr/include/c++/13/bits/exception.h \
- /usr/include/c++/13/bits/exception_ptr.h \
- /usr/include/c++/13/bits/exception_defines.h \
- /usr/include/c++/13/bits/cxxabi_init_exception.h \
- /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/hash_bytes.h \
- /usr/include/c++/13/new /usr/include/c++/13/bits/move.h \
- /usr/include/c++/13/type_traits \
- /usr/include/c++/13/bits/nested_exception.h \
- /usr/include/c++/13/bits/char_traits.h \
- /usr/include/c++/13/bits/localefwd.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/c++locale.h \
- /usr/include/c++/13/clocale /usr/include/locale.h \
- /usr/include/aarch64-linux-gnu/bits/locale.h /usr/include/c++/13/cctype \
- /usr/include/ctype.h /usr/include/aarch64-linux-gnu/bits/types.h \
+ /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
+ /usr/include/aarch64-linux-gnu/bits/environments.h \
+ /usr/include/aarch64-linux-gnu/bits/types.h \
  /usr/include/aarch64-linux-gnu/bits/typesizes.h \
  /usr/include/aarch64-linux-gnu/bits/time64.h \
+ /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
+ /usr/include/aarch64-linux-gnu/bits/confname.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
+ /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/stdio.h \
+ /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
+ /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
+ /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
+ /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
+ /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/aarch64-linux-gnu/bits/floatn.h \
+ /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
+ /usr/include/c++/13/stdlib.h /usr/include/c++/13/cstdlib \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/cpu_defines.h \
+ /usr/include/stdlib.h /usr/include/aarch64-linux-gnu/bits/waitflags.h \
+ /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
+ /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/aarch64-linux-gnu/sys/types.h \
+ /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
+ /usr/include/aarch64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
  /usr/include/aarch64-linux-gnu/bits/endian.h \
  /usr/include/aarch64-linux-gnu/bits/endianness.h \
- /usr/include/c++/13/bits/ios_base.h /usr/include/c++/13/ext/atomicity.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/gthr.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/gthr-default.h \
- /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/aarch64-linux-gnu/bits/sched.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
- /usr/include/aarch64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
- /usr/include/aarch64-linux-gnu/bits/time.h \
- /usr/include/aarch64-linux-gnu/bits/timex.h \
+ /usr/include/aarch64-linux-gnu/bits/byteswap.h \
+ /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
+ /usr/include/aarch64-linux-gnu/sys/select.h \
+ /usr/include/aarch64-linux-gnu/bits/select.h \
+ /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
- /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
  /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
  /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h \
  /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/aarch64-linux-gnu/bits/setjmp.h \
- /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
- /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/atomic_word.h \
- /usr/include/aarch64-linux-gnu/sys/single_threaded.h \
- /usr/include/c++/13/bits/locale_classes.h /usr/include/c++/13/string \
- /usr/include/c++/13/bits/allocator.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/c++/13/bits/std_abs.h /usr/include/c++/13/string \
+ /usr/include/c++/13/bits/requires_hosted.h \
+ /usr/include/c++/13/bits/stringfwd.h \
+ /usr/include/c++/13/bits/memoryfwd.h \
+ /usr/include/c++/13/bits/char_traits.h \
+ /usr/include/c++/13/bits/postypes.h /usr/include/c++/13/cwchar \
+ /usr/include/wchar.h /usr/include/aarch64-linux-gnu/bits/wchar.h \
+ /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
+ /usr/include/c++/13/type_traits /usr/include/c++/13/bits/allocator.h \
  /usr/include/aarch64-linux-gnu/c++/13/bits/c++allocator.h \
- /usr/include/c++/13/bits/new_allocator.h \
+ /usr/include/c++/13/bits/new_allocator.h /usr/include/c++/13/new \
+ /usr/include/c++/13/bits/exception.h \
  /usr/include/c++/13/bits/functexcept.h \
+ /usr/include/c++/13/bits/exception_defines.h \
+ /usr/include/c++/13/bits/move.h \
  /usr/include/c++/13/bits/cpp_type_traits.h \
+ /usr/include/c++/13/bits/localefwd.h \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/c++locale.h \
+ /usr/include/c++/13/clocale /usr/include/locale.h \
+ /usr/include/aarch64-linux-gnu/bits/locale.h /usr/include/c++/13/iosfwd \
+ /usr/include/c++/13/cctype /usr/include/ctype.h \
  /usr/include/c++/13/bits/ostream_insert.h \
  /usr/include/c++/13/bits/cxxabi_forced.h \
  /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
@@ -105,52 +108,34 @@ CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o: \
  /usr/include/c++/13/bits/basic_string.h \
  /usr/include/c++/13/ext/alloc_traits.h \
  /usr/include/c++/13/bits/alloc_traits.h \
- /usr/include/c++/13/bits/stl_construct.h /usr/include/c++/13/string_view \
- /usr/include/c++/13/bits/functional_hash.h \
- /usr/include/c++/13/bits/string_view.tcc \
- /usr/include/c++/13/ext/string_conversions.h /usr/include/c++/13/cstdlib \
- /usr/include/stdlib.h /usr/include/aarch64-linux-gnu/bits/waitflags.h \
- /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
- /usr/include/aarch64-linux-gnu/sys/types.h \
- /usr/include/aarch64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
- /usr/include/aarch64-linux-gnu/bits/byteswap.h \
- /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
- /usr/include/aarch64-linux-gnu/sys/select.h \
- /usr/include/aarch64-linux-gnu/bits/select.h \
- /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
- /usr/include/c++/13/bits/std_abs.h /usr/include/c++/13/cstdio \
- /usr/include/stdio.h \
- /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
- /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
- /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/13/bits/stl_construct.h \
+ /usr/include/c++/13/ext/string_conversions.h /usr/include/c++/13/cstdio \
  /usr/include/c++/13/cerrno /usr/include/errno.h \
  /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/aarch64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
- /usr/include/c++/13/bits/basic_string.tcc \
- /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
+ /usr/include/c++/13/bits/functional_hash.h \
+ /usr/include/c++/13/bits/hash_bytes.h \
+ /usr/include/c++/13/bits/basic_string.tcc /usr/include/c++/13/thread \
+ /usr/include/c++/13/bits/std_thread.h /usr/include/c++/13/tuple \
  /usr/include/c++/13/bits/uses_allocator.h \
- /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /usr/include/c++/13/bits/locale_classes.tcc \
- /usr/include/c++/13/system_error \
- /usr/include/aarch64-linux-gnu/c++/13/bits/error_constants.h \
- /usr/include/c++/13/stdexcept /usr/include/c++/13/streambuf \
- /usr/include/c++/13/bits/streambuf.tcc \
- /usr/include/c++/13/bits/basic_ios.h \
- /usr/include/c++/13/bits/locale_facets.h /usr/include/c++/13/cwctype \
- /usr/include/wctype.h /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/ctype_base.h \
- /usr/include/c++/13/bits/streambuf_iterator.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/ctype_inline.h \
- /usr/include/c++/13/bits/locale_facets.tcc \
- /usr/include/c++/13/bits/basic_ios.tcc \
- /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/chrono \
+ /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/gthr.h \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h \
+ /usr/include/aarch64-linux-gnu/bits/sched.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
+ /usr/include/aarch64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
+ /usr/include/aarch64-linux-gnu/bits/time.h \
+ /usr/include/aarch64-linux-gnu/bits/timex.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
+ /usr/include/aarch64-linux-gnu/bits/setjmp.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+ /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+ /usr/include/c++/13/bits/this_thread_sleep.h \
  /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
  /usr/include/c++/13/cstdint \
  /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
@@ -158,18 +143,20 @@ CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
  /usr/include/c++/13/limits /usr/include/c++/13/ctime \
  /usr/include/c++/13/bits/parse_numbers.h \
- /usr/include/opencv4/opencv2/opencv.hpp \
- /usr/include/opencv4/opencv2/opencv_modules.hpp \
+ /usr/include/opencv4/opencv2/core/core.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
  /usr/include/opencv4/opencv2/core/cvdef.h \
  /usr/include/opencv4/opencv2/core/version.hpp \
  /usr/include/opencv4/opencv2/core/hal/interface.h \
+ /usr/include/c++/13/cstddef \
  /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
  /usr/lib/gcc/aarch64-linux-gnu/13/include/arm_neon.h \
  /usr/lib/gcc/aarch64-linux-gnu/13/include/arm_fp16.h \
  /usr/lib/gcc/aarch64-linux-gnu/13/include/arm_bf16.h \
  /usr/include/c++/13/array /usr/include/c++/13/compare \
- /usr/include/opencv4/opencv2/core/base.hpp /usr/include/c++/13/climits \
+ /usr/include/opencv4/opencv2/core/base.hpp \
+ /usr/include/opencv4/opencv2/opencv_modules.hpp \
+ /usr/include/c++/13/climits \
  /usr/lib/gcc/aarch64-linux-gnu/13/include/limits.h \
  /usr/lib/gcc/aarch64-linux-gnu/13/include/syslimits.h \
  /usr/include/limits.h /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
@@ -183,8 +170,6 @@ CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o: \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
  /usr/include/c++/13/bits/stl_tempbuf.h \
- /usr/include/c++/13/pstl/glue_algorithm_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h \
  /usr/include/opencv4/opencv2/core/cvstd.hpp /usr/include/c++/13/cstring \
  /usr/include/string.h /usr/include/strings.h /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h /usr/include/c++/13/cmath \
@@ -197,32 +182,24 @@ CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/mathcalls.h \
  /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/aarch64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/tr1/gamma.tcc \
- /usr/include/c++/13/tr1/special_function_util.h \
- /usr/include/c++/13/tr1/bessel_function.tcc \
- /usr/include/c++/13/tr1/beta_function.tcc \
- /usr/include/c++/13/tr1/ell_integral.tcc \
- /usr/include/c++/13/tr1/exp_integral.tcc \
- /usr/include/c++/13/tr1/hypergeometric.tcc \
- /usr/include/c++/13/tr1/legendre_function.tcc \
- /usr/include/c++/13/tr1/modified_bessel_func.tcc \
- /usr/include/c++/13/tr1/poly_hermite.tcc \
- /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc \
  /usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
- /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
- /usr/include/c++/13/bits/shared_ptr.h \
- /usr/include/c++/13/bits/shared_ptr_base.h \
+ /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/shared_ptr.h \
+ /usr/include/c++/13/bits/shared_ptr_base.h /usr/include/c++/13/typeinfo \
  /usr/include/c++/13/bits/allocated_ptr.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
- /usr/include/c++/13/ext/concurrence.h \
+ /usr/include/c++/13/ext/atomicity.h \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/atomic_word.h \
+ /usr/include/aarch64-linux-gnu/sys/single_threaded.h \
+ /usr/include/c++/13/ext/concurrence.h /usr/include/c++/13/exception \
+ /usr/include/c++/13/bits/exception_ptr.h \
+ /usr/include/c++/13/bits/cxxabi_init_exception.h \
+ /usr/include/c++/13/bits/nested_exception.h \
  /usr/include/c++/13/bits/shared_ptr_atomic.h \
  /usr/include/c++/13/bits/atomic_base.h \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13/backward/auto_ptr.h \
- /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/opencv4/opencv2/core/neon_utils.hpp \
  /usr/include/opencv4/opencv2/core/vsx_utils.hpp /usr/include/assert.h \
  /usr/include/opencv4/opencv2/core/check.hpp \
@@ -242,416 +219,53 @@ CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o: \
  /usr/include/opencv4/opencv2/core/operations.hpp \
  /usr/include/opencv4/opencv2/core/cvstd.inl.hpp \
  /usr/include/c++/13/complex /usr/include/c++/13/sstream \
+ /usr/include/c++/13/istream /usr/include/c++/13/ios \
+ /usr/include/c++/13/bits/ios_base.h \
+ /usr/include/c++/13/bits/locale_classes.h \
+ /usr/include/c++/13/bits/locale_classes.tcc \
+ /usr/include/c++/13/system_error \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/error_constants.h \
+ /usr/include/c++/13/stdexcept /usr/include/c++/13/streambuf \
+ /usr/include/c++/13/bits/streambuf.tcc \
+ /usr/include/c++/13/bits/basic_ios.h \
+ /usr/include/c++/13/bits/locale_facets.h /usr/include/c++/13/cwctype \
+ /usr/include/wctype.h /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/ctype_base.h \
+ /usr/include/c++/13/bits/streambuf_iterator.h \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/ctype_inline.h \
+ /usr/include/c++/13/bits/locale_facets.tcc \
+ /usr/include/c++/13/bits/basic_ios.tcc /usr/include/c++/13/ostream \
+ /usr/include/c++/13/bits/ostream.tcc \
+ /usr/include/c++/13/bits/istream.tcc \
  /usr/include/c++/13/bits/sstream.tcc \
  /usr/include/opencv4/opencv2/core/utility.hpp \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
- /usr/include/c++/13/unordered_map \
- /usr/include/c++/13/bits/unordered_map.h \
- /usr/include/c++/13/bits/hashtable.h \
- /usr/include/c++/13/bits/hashtable_policy.h \
- /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/mutex \
- /usr/include/c++/13/bits/std_mutex.h \
+ /usr/include/c++/13/mutex /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h \
  /usr/include/opencv4/opencv2/core/optim.hpp \
  /usr/include/opencv4/opencv2/core/ovx.hpp \
  /usr/include/opencv4/opencv2/core/cvdef.h \
- /usr/include/opencv4/opencv2/calib3d.hpp \
+ /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/Tracking.h \
+ /usr/include/opencv4/opencv2/features2d/features2d.hpp \
  /usr/include/opencv4/opencv2/features2d.hpp \
  /usr/include/opencv4/opencv2/flann/miniflann.hpp \
  /usr/include/opencv4/opencv2/flann/defines.h \
  /usr/include/opencv4/opencv2/flann/config.h \
- /usr/include/opencv4/opencv2/core/affine.hpp \
- /usr/include/opencv4/opencv2/dnn.hpp \
- /usr/include/opencv4/opencv2/dnn/dnn.hpp \
- /usr/include/opencv4/opencv2/core/async.hpp \
- /usr/include/opencv4/opencv2/dnn/version.hpp \
- /usr/include/opencv4/opencv2/dnn/dict.hpp /usr/include/c++/13/map \
- /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
- /usr/include/c++/13/bits/stl_multimap.h \
- /usr/include/opencv4/opencv2/dnn/layer.hpp \
- /usr/include/opencv4/opencv2/dnn/dnn.inl.hpp \
- /usr/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
- /usr/include/opencv4/opencv2/dnn/dnn.hpp \
- /usr/include/opencv4/opencv2/flann.hpp \
- /usr/include/opencv4/opencv2/flann/flann_base.hpp \
- /usr/include/opencv4/opencv2/flann/general.h \
- /usr/include/opencv4/opencv2/flann/matrix.h \
- /usr/include/opencv4/opencv2/flann/params.h \
- /usr/include/opencv4/opencv2/flann/any.h \
- /usr/include/opencv4/opencv2/flann/defines.h \
- /usr/include/opencv4/opencv2/flann/saving.h \
- /usr/include/opencv4/opencv2/flann/nn_index.h \
- /usr/include/opencv4/opencv2/flann/result_set.h /usr/include/c++/13/set \
- /usr/include/c++/13/bits/stl_set.h \
- /usr/include/c++/13/bits/stl_multiset.h \
- /usr/include/opencv4/opencv2/flann/all_indices.h \
- /usr/include/opencv4/opencv2/flann/kdtree_index.h \
- /usr/include/opencv4/opencv2/flann/dynamic_bitset.h \
- /usr/include/opencv4/opencv2/flann/dist.h \
- /usr/include/opencv4/opencv2/flann/heap.h \
- /usr/include/opencv4/opencv2/flann/allocator.h \
- /usr/include/c++/13/stdlib.h /usr/include/opencv4/opencv2/flann/random.h \
- /usr/include/opencv4/opencv2/flann/kdtree_single_index.h \
- /usr/include/opencv4/opencv2/flann/kmeans_index.h \
- /usr/include/opencv4/opencv2/flann/logger.h \
- /usr/include/opencv4/opencv2/flann/composite_index.h \
- /usr/include/opencv4/opencv2/flann/linear_index.h \
- /usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
- /usr/include/opencv4/opencv2/flann/lsh_index.h \
- /usr/include/opencv4/opencv2/flann/lsh_table.h \
- /usr/include/c++/13/iomanip /usr/include/c++/13/locale \
- /usr/include/c++/13/bits/locale_facets_nonio.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/time_members.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/13/bits/codecvt.h \
- /usr/include/c++/13/bits/locale_facets_nonio.tcc \
- /usr/include/c++/13/bits/locale_conv.h \
- /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/math.h \
- /usr/include/opencv4/opencv2/flann/autotuned_index.h \
- /usr/include/opencv4/opencv2/flann/ground_truth.h \
- /usr/include/opencv4/opencv2/flann/index_testing.h \
- /usr/include/opencv4/opencv2/flann/timer.h \
- /usr/include/opencv4/opencv2/flann/sampling.h \
- /usr/include/opencv4/opencv2/highgui.hpp \
- /usr/include/opencv4/opencv2/imgcodecs.hpp \
- /usr/include/opencv4/opencv2/videoio.hpp \
- /usr/include/opencv4/opencv2/imgproc.hpp \
- /usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
- /usr/include/opencv4/opencv2/ml.hpp \
- /usr/include/opencv4/opencv2/ml/ml.inl.hpp \
- /usr/include/opencv4/opencv2/objdetect.hpp \
- /usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp \
- /usr/include/opencv4/opencv2/objdetect/face.hpp \
- /usr/include/opencv4/opencv2/photo.hpp \
- /usr/include/opencv4/opencv2/stitching.hpp \
- /usr/include/opencv4/opencv2/stitching/warpers.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
- /usr/include/opencv4/opencv2/core/cuda.hpp \
- /usr/include/opencv4/opencv2/core/cuda_types.hpp \
- /usr/include/opencv4/opencv2/core/cuda.inl.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/util.hpp \
- /usr/include/c++/13/list /usr/include/c++/13/bits/stl_list.h \
- /usr/include/c++/13/bits/list.tcc \
- /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
- /usr/include/c++/13/queue /usr/include/c++/13/deque \
- /usr/include/c++/13/bits/stl_deque.h /usr/include/c++/13/bits/deque.tcc \
- /usr/include/c++/13/bits/stl_queue.h \
- /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/blenders.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
- /usr/include/opencv4/opencv2/video.hpp \
- /usr/include/opencv4/opencv2/video/tracking.hpp \
- /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/depthai.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/Initialization.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/device/CalibrationHandler.hpp \
- /usr/include/c++/13/filesystem /usr/include/c++/13/bits/fs_fwd.h \
- /usr/include/c++/13/bits/fs_path.h /usr/include/c++/13/codecvt \
- /usr/include/c++/13/bits/fs_dir.h /usr/include/c++/13/bits/fs_ops.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/CameraBoardSocket.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/EepromData.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/CameraInfo.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/CameraModel.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/Extrinsics.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/Point3f.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/Serialization.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/nlohmann/json.hpp \
- /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
- /usr/include/c++/13/forward_list /usr/include/c++/13/bits/forward_list.h \
- /usr/include/c++/13/bits/forward_list.tcc /usr/include/c++/13/valarray \
- /usr/include/c++/13/bits/valarray_array.h \
- /usr/include/c++/13/bits/valarray_array.tcc \
- /usr/include/c++/13/bits/valarray_before.h \
- /usr/include/c++/13/bits/slice_array.h \
- /usr/include/c++/13/bits/valarray_after.h \
- /usr/include/c++/13/bits/gslice.h \
- /usr/include/c++/13/bits/gslice_array.h \
- /usr/include/c++/13/bits/mask_array.h \
- /usr/include/c++/13/bits/indirect_array.h /usr/include/c++/13/version \
- /usr/include/c++/13/cassert /usr/include/c++/13/optional \
- /usr/include/c++/13/numeric /usr/include/c++/13/bits/stl_numeric.h \
- /usr/include/c++/13/pstl/glue_numeric_defs.h /usr/include/c++/13/any \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/serializer.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/array.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/encoding.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/encoding_byte.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/utility.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/traits/is_template_base_of.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/traits/void.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/status.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/types/result.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/enum.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/handle.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/types/handle.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/map.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/members.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/logical_buffer.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/types/detail/logical_buffer.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/types/detail/member_pointer.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/traits/is_detected.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/optional.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/types/optional.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/traits/is_comparable.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/pair.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/reference_wrapper.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/result.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/serializer.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/string.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/table.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/table.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/macros.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/structure.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/utility/sip_hash.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/utility/compiler.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/utility/bounded_reader.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/utility/bounded_writer.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/tuple.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/value.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/variant.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/types/variant.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/types/detail/variant.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/base/vector.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/utility/buffer_reader.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/libnop/include/nop/utility/stream_writer.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/NlohmannJsonCompat.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/StereoRectification.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/Point2f.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/Size2f.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/device/Device.hpp \
- /usr/include/c++/13/condition_variable \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/device/DeviceBase.hpp \
- /usr/include/c++/13/atomic /usr/include/c++/13/thread \
- /usr/include/c++/13/bits/std_thread.h \
- /usr/include/c++/13/bits/this_thread_sleep.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/CameraFeatures.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/CameraImageOrientation.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/CameraSensorType.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/Rect.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/optional.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/UsbSpeed.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/device/DeviceGate.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/XLink/include/XLink/XLinkPublicDefines.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/XLink/include/XLink/XLinkTime.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/device/Version.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/spimpl.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/Pimpl.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/xlink/XLinkConnection.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/ProfilingData.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/openvino/OpenVINO.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/TensorInfo.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/PipelineSchema.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/NodeConnectionSchema.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/NodeObjInfo.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/NodeIoInfo.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/log/LogLevel.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/GlobalProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/Properties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/xlink/XLinkStream.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/XLink/include/XLink/XLinkTime.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/Memory.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/span.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/ChipTemperature.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/ConnectionInterface.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/CpuUsage.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/MemoryInfo.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/StereoPair.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/device/BoardConfig.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/ImgFrame.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/CameraExposureOffset.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/config/config.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/Buffer.hpp \
- /usr/include/c++/13/variant \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/Timestamp.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/ADatatype.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/DatatypeEnum.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/VectorMemory.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/FrameEvent.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/ImgTransformations.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/RotatedRect.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/ProtoSerializable.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/xlink/XLinkConstants.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/device/CrashDump.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/ProcessorType.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/log/LogMessage.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/RecordReplay.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/VideoEncoderProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/device/DeviceBootloader.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/device/CallbackHandler.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/Pipeline.hpp \
- /usr/include/c++/13/unordered_set \
- /usr/include/c++/13/bits/unordered_set.h \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/AssetManager.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/Assets.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/DeviceNode.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/Node.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/MessageQueue.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/LockingQueue.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/copyable_unique_ptr.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/capabilities/Capability.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/ThreadedNode.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/AtomicBool.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/JoiningThread.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-bootloader-shared/include/depthai-bootloader-shared/Config.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-bootloader-shared/include/depthai-bootloader-shared/Memory.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-bootloader-shared/include/depthai-bootloader-shared/NlohmannJsonCompat.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-bootloader-shared/include/depthai-bootloader-shared/Section.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-bootloader-shared/include/depthai-bootloader-shared/Type.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/InputQueue.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/ThreadedHostNode.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/nodes.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/AprilTag.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/AprilTagProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/AprilTagConfig.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/BenchmarkIn.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/BenchmarkInProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/BenchmarkOut.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/BenchmarkOutProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/Camera.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/capabilities/ImgFrameCapability.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/capabilities/CapabilityRange.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/variant.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/CameraControl.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/CameraProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/ColorCamera.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/ColorCameraProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/DetectionNetwork.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/modelzoo/Zoo.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/DeviceNodeGroup.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/DeviceNodeGroupProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/Subnode.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/DetectionParser.hpp \
- /usr/include/c++/13/fstream \
- /usr/include/aarch64-linux-gnu/c++/13/bits/basic_file.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/nn_archive/NNArchive.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/ModelType.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/nn_archive/NNArchiveEntry.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/nn_archive/NNArchiveVersionedConfig.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/nn_archive/v1/Config.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/nn_archive/v1/Model.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/nn_archive/v1/Head.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/nn_archive/v1/Metadata.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/nn_archive/v1/Input.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/nn_archive/v1/PreprocessingBlock.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/nn_archive/v1/MetadataClass.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/nn_archive/v1/Output.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/utility/arg.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/DetectionParserProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/DetectionParserOptions.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/DetectionNetworkType.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/NeuralNetwork.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/NeuralNetworkProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/EdgeDetector.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/EdgeDetectorProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/EdgeDetectorConfig.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/FeatureTracker.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/FeatureTrackerProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/FeatureTrackerConfig.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/IMU.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/IMUProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/ImageManip.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/ImageManipConfig.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/Colormap.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/ImageManipProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/MessageDemux.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/MessageDemuxProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/MonoCamera.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/MonoCameraProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/ObjectTracker.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/Tracklets.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/ImgDetections.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/ObjectTrackerProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/PointCloud.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/PointCloudProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/PointCloudConfig.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/SPIIn.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/SPIInProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/SPIOut.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/SPIOutProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/Script.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/ScriptProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/SpatialDetectionNetwork.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/ImageAlign.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/ImageAlignProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/Interpolation.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/ImageAlignConfig.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/StereoDepth.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/StereoDepthConfig.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/StereoDepthProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/SpatialDetectionNetworkProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/SpatialLocationCalculatorConfig.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/SpatialLocationCalculator.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/SpatialLocationCalculatorProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/Sync.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/SyncProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/SystemLogger.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/SystemLoggerProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/Thermal.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/ThermalProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/ThermalConfig.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/ToF.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/ToFProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/ToFConfig.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/MedianFilter.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/UVC.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/UVCProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/VideoEncoder.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/Warp.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/properties/WarpProperties.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/host/RGBD.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/MessageGroup.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/ADatatypeSharedPtrSerialization.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/PointCloudData.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/Point3fRGBA.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/RGBDData.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/node/host/HostNode.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatypes.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/AprilTags.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/BenchmarkReport.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/EncodedFrame.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/IMUData.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/NNData.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/SpatialImgDetections.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/SpatialLocationCalculatorData.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/SystemInformation.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/SystemInformationS3.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/ChipTemperatureS3.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/TrackedFeatures.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/pipeline/datatype/TransformData.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/Point3d.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/depthai-core/include/depthai/common/Quaterniond.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/System.h \
- /usr/include/unistd.h /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
- /usr/include/aarch64-linux-gnu/bits/environments.h \
- /usr/include/aarch64-linux-gnu/bits/confname.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
- /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
- /usr/include/opencv4/opencv2/core/core.hpp \
- /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/Tracking.h \
- /usr/include/opencv4/opencv2/features2d/features2d.hpp \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/Viewer.h \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/FrameDrawer.h \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/MapPoint.h \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/KeyFrame.h \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/BowVector.h \
+ /usr/include/c++/13/iostream /usr/include/c++/13/map \
+ /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h \
+ /usr/include/c++/13/bits/erase_if.h \
  /usr/include/boost/serialization/serialization.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/detail/select_compiler_config.hpp \
  /usr/include/boost/config/compiler/gcc.hpp \
  /usr/include/boost/config/detail/select_stdlib_config.hpp \
+ /usr/include/c++/13/version \
  /usr/include/boost/config/stdlib/libstdcpp3.hpp \
  /usr/include/boost/config/detail/select_platform_config.hpp \
  /usr/include/boost/config/platform/linux.hpp \
@@ -660,7 +274,8 @@ CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o: \
  /usr/include/boost/config/helper_macros.hpp \
  /usr/include/boost/config/detail/cxx_composite.hpp \
  /usr/include/boost/serialization/strong_typedef.hpp \
- /usr/include/boost/operators.hpp \
+ /usr/include/boost/operators.hpp /usr/include/c++/13/iterator \
+ /usr/include/c++/13/bits/stream_iterator.h \
  /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/config/workaround.hpp \
  /usr/include/boost/core/addressof.hpp \
@@ -904,10 +519,109 @@ CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o: \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FORB.h \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FClass.h \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h \
+ /usr/include/c++/13/cassert /usr/include/c++/13/numeric \
+ /usr/include/c++/13/bits/stl_numeric.h /usr/include/c++/13/fstream \
+ /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/basic_file.h \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/c++io.h \
+ /usr/include/c++/13/bits/fstream.tcc \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FeatureVector.h \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/ScoringObject.h \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/../DUtils/Random.h \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/ORBextractor.h \
+ /usr/include/c++/13/list /usr/include/c++/13/bits/stl_list.h \
+ /usr/include/c++/13/bits/list.tcc \
+ /usr/include/opencv4/opencv2/opencv.hpp \
+ /usr/include/opencv4/opencv2/calib3d.hpp \
+ /usr/include/opencv4/opencv2/core/affine.hpp \
+ /usr/include/opencv4/opencv2/dnn.hpp \
+ /usr/include/opencv4/opencv2/dnn/dnn.hpp \
+ /usr/include/opencv4/opencv2/core/async.hpp /usr/include/c++/13/chrono \
+ /usr/include/opencv4/opencv2/dnn/version.hpp \
+ /usr/include/opencv4/opencv2/dnn/dict.hpp \
+ /usr/include/opencv4/opencv2/dnn/layer.hpp \
+ /usr/include/opencv4/opencv2/dnn/dnn.inl.hpp \
+ /usr/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
+ /usr/include/opencv4/opencv2/dnn/dnn.hpp \
+ /usr/include/opencv4/opencv2/flann.hpp \
+ /usr/include/opencv4/opencv2/flann/flann_base.hpp \
+ /usr/include/opencv4/opencv2/flann/general.h \
+ /usr/include/opencv4/opencv2/flann/matrix.h \
+ /usr/include/opencv4/opencv2/flann/params.h \
+ /usr/include/opencv4/opencv2/flann/any.h \
+ /usr/include/opencv4/opencv2/flann/defines.h \
+ /usr/include/opencv4/opencv2/flann/saving.h \
+ /usr/include/opencv4/opencv2/flann/nn_index.h \
+ /usr/include/opencv4/opencv2/flann/result_set.h /usr/include/c++/13/set \
+ /usr/include/c++/13/bits/stl_set.h \
+ /usr/include/c++/13/bits/stl_multiset.h \
+ /usr/include/opencv4/opencv2/flann/all_indices.h \
+ /usr/include/opencv4/opencv2/flann/kdtree_index.h \
+ /usr/include/opencv4/opencv2/flann/dynamic_bitset.h \
+ /usr/include/opencv4/opencv2/flann/dist.h \
+ /usr/include/opencv4/opencv2/flann/heap.h \
+ /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/unordered_map.h \
+ /usr/include/c++/13/bits/hashtable.h \
+ /usr/include/c++/13/bits/hashtable_policy.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /usr/include/opencv4/opencv2/flann/allocator.h \
+ /usr/include/opencv4/opencv2/flann/random.h \
+ /usr/include/opencv4/opencv2/flann/kdtree_single_index.h \
+ /usr/include/opencv4/opencv2/flann/kmeans_index.h \
+ /usr/include/opencv4/opencv2/flann/logger.h \
+ /usr/include/opencv4/opencv2/flann/composite_index.h \
+ /usr/include/opencv4/opencv2/flann/linear_index.h \
+ /usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
+ /usr/include/opencv4/opencv2/flann/lsh_index.h \
+ /usr/include/opencv4/opencv2/flann/lsh_table.h \
+ /usr/include/c++/13/iomanip /usr/include/c++/13/locale \
+ /usr/include/c++/13/bits/locale_facets_nonio.h \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/time_members.h \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/13/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/13/bits/locale_conv.h \
+ /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/math.h \
+ /usr/include/opencv4/opencv2/flann/autotuned_index.h \
+ /usr/include/opencv4/opencv2/flann/ground_truth.h \
+ /usr/include/opencv4/opencv2/flann/index_testing.h \
+ /usr/include/opencv4/opencv2/flann/timer.h \
+ /usr/include/opencv4/opencv2/flann/sampling.h \
+ /usr/include/opencv4/opencv2/highgui.hpp \
+ /usr/include/opencv4/opencv2/imgcodecs.hpp \
+ /usr/include/opencv4/opencv2/videoio.hpp \
+ /usr/include/opencv4/opencv2/imgproc.hpp \
+ /usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
+ /usr/include/opencv4/opencv2/ml.hpp \
+ /usr/include/opencv4/opencv2/ml/ml.inl.hpp \
+ /usr/include/opencv4/opencv2/objdetect.hpp \
+ /usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp \
+ /usr/include/opencv4/opencv2/objdetect/face.hpp \
+ /usr/include/opencv4/opencv2/photo.hpp \
+ /usr/include/opencv4/opencv2/stitching.hpp \
+ /usr/include/opencv4/opencv2/stitching/warpers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+ /usr/include/opencv4/opencv2/core/cuda.hpp \
+ /usr/include/opencv4/opencv2/core/cuda_types.hpp \
+ /usr/include/opencv4/opencv2/core/cuda.inl.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/util.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
+ /usr/include/c++/13/queue /usr/include/c++/13/deque \
+ /usr/include/c++/13/bits/stl_deque.h /usr/include/c++/13/bits/deque.tcc \
+ /usr/include/c++/13/bits/stl_queue.h \
+ /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/blenders.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
+ /usr/include/opencv4/opencv2/video.hpp \
+ /usr/include/opencv4/opencv2/video/tracking.hpp \
+ /usr/include/opencv4/opencv2/video/background_segm.hpp \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/Frame.h \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/Thirdparty/Sophus/sophus/geometry.hpp \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/Thirdparty/Sophus/sophus/se2.hpp \
@@ -1258,16 +972,18 @@ CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o: \
  /usr/local/include/pangolin/utils/log.h \
  /usr/local/include/pangolin/display/display.h \
  /usr/local/include/pangolin/gl/glinclude.h \
- /usr/local/include/pangolin/gl/glplatform.h /usr/include/GL/gl.h \
- /usr/include/GL/glext.h /usr/include/KHR/khrplatform.h \
- /usr/local/include/pangolin/gl/glpangoglu.h \
+ /usr/local/include/pangolin/gl/glplatform.h /usr/include/epoxy/gl.h \
+ /usr/include/epoxy/common.h \
+ /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
+ /usr/include/epoxy/gl_generated.h /usr/include/inttypes.h \
+ /usr/include/GL/gl.h /usr/local/include/pangolin/gl/glpangoglu.h \
  /usr/local/include/pangolin/gl/viewport.h \
  /usr/local/include/pangolin/utils/params.h \
  /usr/local/include/pangolin/utils/type_convert.h \
  /usr/local/include/pangolin/compat/type_traits.h \
  /usr/local/include/pangolin/windowing/window.h \
  /usr/local/include/pangolin/utils/signal_slot.h \
- /usr/local/include/sigslot/signal.hpp \
+ /usr/local/include/sigslot/signal.hpp /usr/include/c++/13/atomic \
  /usr/local/include/pangolin/utils/true_false_toggle.h \
  /usr/local/include/pangolin/utils/uri.h \
  /usr/local/include/pangolin/windowing/handler_bitsets.h \
@@ -1284,7 +1000,7 @@ CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o: \
  /usr/local/include/pangolin/var/varvaluegeneric.h \
  /usr/local/include/pangolin/utils/file_utils.h \
  /usr/local/include/pangolin/var/varwrapper.h \
- /usr/local/include/pangolin/var/varstate.h \
+ /usr/local/include/pangolin/var/varstate.h /usr/include/c++/13/any \
  /usr/local/include/pangolin/var/varinit.h \
  /usr/local/include/pangolin/handler/handler.h \
  /usr/local/include/pangolin/gl/opengl_render_state.h \
@@ -1317,7 +1033,7 @@ CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o: \
  /usr/local/include/pangolin/video/video.h \
  /usr/local/include/pangolin/video/video_exception.h \
  /usr/local/include/pangolin/video/video_interface.h \
- /usr/local/include/pangolin/utils/picojson.h /usr/include/inttypes.h \
+ /usr/local/include/pangolin/utils/picojson.h \
  /usr/local/include/pangolin/video/stream_info.h \
  /usr/local/include/pangolin/video/video_output_interface.h \
  /usr/local/include/pangolin/video/video_input.h \
@@ -1329,6 +1045,8 @@ CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o: \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/CameraModels/Pinhole.h \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/CameraModels/GeometricCamera.h \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/TwoViewReconstruction.h \
+ /usr/include/c++/13/unordered_set \
+ /usr/include/c++/13/bits/unordered_set.h \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/MapDrawer.h \
  /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/include/System.h \

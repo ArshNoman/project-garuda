@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/parallels/Desktop/projects/project-garuda/oakd_slam/src/oakd_stereo_live.cpp" "CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o" "gcc" "CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o.d"
+  "/home/parallels/Desktop/projects/project-garuda/oakd_slam/oakd_stereo_live.cpp" "CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.o" "gcc" "CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

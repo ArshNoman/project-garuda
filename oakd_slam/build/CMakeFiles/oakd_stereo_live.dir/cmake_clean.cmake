@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o"
-  "CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o.d"
+  "CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.o"
+  "CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.o.d"
   "oakd_stereo_live"
   "oakd_stereo_live.pdb"
 )

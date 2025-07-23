@@ -69,28 +69,28 @@ include CMakeFiles/oakd_stereo_live.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/oakd_stereo_live.dir/flags.make
 
-CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o: CMakeFiles/oakd_stereo_live.dir/flags.make
-CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o: /home/parallels/Desktop/projects/project-garuda/oakd_slam/src/oakd_stereo_live.cpp
-CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o: CMakeFiles/oakd_stereo_live.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/Desktop/projects/project-garuda/oakd_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o -MF CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o.d -o CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o -c /home/parallels/Desktop/projects/project-garuda/oakd_slam/src/oakd_stereo_live.cpp
+CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.o: CMakeFiles/oakd_stereo_live.dir/flags.make
+CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.o: /home/parallels/Desktop/projects/project-garuda/oakd_slam/oakd_stereo_live.cpp
+CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.o: CMakeFiles/oakd_stereo_live.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/Desktop/projects/project-garuda/oakd_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.o -MF CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.o.d -o CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.o -c /home/parallels/Desktop/projects/project-garuda/oakd_slam/oakd_stereo_live.cpp
 
-CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/parallels/Desktop/projects/project-garuda/oakd_slam/src/oakd_stereo_live.cpp > CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.i
+CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/parallels/Desktop/projects/project-garuda/oakd_slam/oakd_stereo_live.cpp > CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.i
 
-CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/parallels/Desktop/projects/project-garuda/oakd_slam/src/oakd_stereo_live.cpp -o CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.s
+CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/parallels/Desktop/projects/project-garuda/oakd_slam/oakd_stereo_live.cpp -o CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.s
 
 # Object files for target oakd_stereo_live
 oakd_stereo_live_OBJECTS = \
-"CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o"
+"CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.o"
 
 # External object files for target oakd_stereo_live
 oakd_stereo_live_EXTERNAL_OBJECTS =
 
-oakd_stereo_live: CMakeFiles/oakd_stereo_live.dir/src/oakd_stereo_live.cpp.o
+oakd_stereo_live: CMakeFiles/oakd_stereo_live.dir/oakd_stereo_live.cpp.o
 oakd_stereo_live: CMakeFiles/oakd_stereo_live.dir/build.make
 oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libopencv_stitching.so.4.6.0
 oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libopencv_alphamat.so.4.6.0
@@ -128,6 +128,13 @@ oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libopencv_viz.so.4.6.0
 oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libopencv_wechat_qrcode.so.4.6.0
 oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libopencv_xobjdetect.so.4.6.0
 oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libopencv_xphoto.so.4.6.0
+oakd_stereo_live: /usr/local/lib/libpango_glgeometry.so.0.9.3
+oakd_stereo_live: /usr/local/lib/libpango_plot.so.0.9.3
+oakd_stereo_live: /usr/local/lib/libpango_python.so
+oakd_stereo_live: /usr/local/lib/libpango_scene.so.0.9.3
+oakd_stereo_live: /usr/local/lib/libpango_tools.so.0.9.3
+oakd_stereo_live: /usr/local/lib/libpango_video.so.0.9.3
+oakd_stereo_live: /home/parallels/Desktop/projects/project-garuda/oakd_slam/../ThirdParty/ORB-SLAM3/lib/libORB_SLAM3.so
 oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libopencv_highgui.so.4.6.0
 oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libopencv_datasets.so.4.6.0
 oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libopencv_plot.so.4.6.0
@@ -147,6 +154,18 @@ oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libopencv_flann.so.4.6.0
 oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libopencv_photo.so.4.6.0
 oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.4.6.0
 oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libopencv_core.so.4.6.0
+oakd_stereo_live: /usr/local/lib/libpango_geometry.so.0.9.3
+oakd_stereo_live: /usr/local/lib/libtinyobj.so.0.9.3
+oakd_stereo_live: /usr/local/lib/libpango_display.so.0.9.3
+oakd_stereo_live: /usr/local/lib/libpango_vars.so.0.9.3
+oakd_stereo_live: /usr/local/lib/libpango_windowing.so.0.9.3
+oakd_stereo_live: /usr/local/lib/libpango_opengl.so.0.9.3
+oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libEGL.so
+oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libOpenGL.so
+oakd_stereo_live: /usr/lib/aarch64-linux-gnu/libepoxy.so
+oakd_stereo_live: /usr/local/lib/libpango_image.so.0.9.3
+oakd_stereo_live: /usr/local/lib/libpango_packetstream.so.0.9.3
+oakd_stereo_live: /usr/local/lib/libpango_core.so.0.9.3
 oakd_stereo_live: CMakeFiles/oakd_stereo_live.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/parallels/Desktop/projects/project-garuda/oakd_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable oakd_stereo_live"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/oakd_stereo_live.dir/link.txt --verbose=$(VERBOSE)

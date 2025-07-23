@@ -1,36 +1,41 @@
 %YAML:1.0
 
-Camera.type: "Stereo"
-Camera.name: "OakD_Lite"
-Camera.width: 640
-Camera.height: 400
-Camera.fx: 460.0
-Camera.fy: 460.0
+Camera.Sensor: 1
+Camera.type: "PinHole"
+
+Camera.fx: 448.0
+Camera.fy: 448.0
 Camera.cx: 320.0
-Camera.cy: 200.0
+Camera.cy: 240.0
+
 Camera.k1: 0.0
 Camera.k2: 0.0
 Camera.p1: 0.0
 Camera.p2: 0.0
-Camera.k3: 0.0
-Camera.bf: 46.0
-Camera.fps: 30.0
-Camera.RGB: 1
+
+Camera.width: 640
+Camera.height: 480
+
+Camera.bf: 44.8
 
 ThDepth: 40.0
 
+# ORB Extractor Parameters
 ORBextractor.nFeatures: 1000
 ORBextractor.scaleFactor: 1.2
 ORBextractor.nLevels: 8
 ORBextractor.iniThFAST: 20
 ORBextractor.minThFAST: 7
 
+# Viewer Parameters
 Viewer.KeyFrameSize: 0.05
 Viewer.KeyFrameLineWidth: 1
 Viewer.GraphLineWidth: 0.9
 Viewer.PointSize: 2
 Viewer.CameraSize: 0.08
 Viewer.CameraLineWidth: 3
+
+# Viewer Default Camera Pose
 Viewer.ViewpointX: 0
 Viewer.ViewpointY: -0.7
 Viewer.ViewpointZ: -1.8
