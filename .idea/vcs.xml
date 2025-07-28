@@ -6,15 +6,24 @@
     <mapping directory="$PROJECT_DIR$/ThirdParty/ORB-SLAM3" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ThirdParty/Pangolin" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ThirdParty/XLink" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/cpr" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/cpr/build/_deps/zlib-src" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ThirdParty/depthai-bootloader-shared" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ThirdParty/depthai-core" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/ThirdParty/depthai-core/3rdparty/foxglove/ws-protocol" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/ThirdParty/depthai-core/3rdparty/xtensor" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/ThirdParty/depthai-core/3rdparty/xtl" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/ThirdParty/depthai-core/bindings/python/external/pybind11_opencv_numpy" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/ThirdParty/depthai-core/bindings/python/external/xtensor-python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/depthai-core/include/depthai-shared" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ThirdParty/depthai-core/shared/depthai-bootloader-shared" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/depthai-core/shared/depthai-shared" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ThirdParty/eigen3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/fmt" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ThirdParty/libnop" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/tl-optional" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/oakd_orbslam3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/oakd_orbslam3/ORB_SLAM3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/oakd_orbslam3/depthai-core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/oakd_orbslam3/depthai-core/shared/depthai-bootloader-shared" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/oakd_orbslam3/depthai-core/shared/depthai-shared" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/oakdslamTEST" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/oakdslamTEST/ORB_SLAM3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/oakdslamTEST/depthai-core" vcs="Git" />
   </component>
 </project>

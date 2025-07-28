@@ -1,3 +1,0 @@
-/home/parallels/Desktop/projects/project-garuda/oakd_slam/build/CMakeFiles/oakd_stereo_live.dir
-/home/parallels/Desktop/projects/project-garuda/oakd_slam/build/CMakeFiles/edit_cache.dir
-/home/parallels/Desktop/projects/project-garuda/oakd_slam/build/CMakeFiles/rebuild_cache.dir
