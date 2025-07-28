@@ -1,0 +1,655 @@
+[33mcommit 79cdb20ccea2f158b370c5c207a4e178c377c3b3[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Fri Mar 14 16:41:44 2025 +0100
+
+    Bump release version to 2.30.0
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 8c2671877..a5514a7a7 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -55,7 +55,7 @@[m [mif(WIN32)[m
+ endif()[m
+ [m
+ # Create depthai project[m
+[31m-project(depthai VERSION "2.29.0" LANGUAGES CXX C)[m
+[32m+[m[32mproject(depthai VERSION "2.30.0" LANGUAGES CXX C)[m
+ get_directory_property(has_parent PARENT_DIRECTORY)[m
+ if(has_parent)[m
+     set(DEPTHAI_VERSION ${PROJECT_VERSION} PARENT_SCOPE)[m
+
+[33mcommit 66567931d71bbb0b9b7f3b495742ce0e82eb14ef[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Mon Nov 11 00:38:27 2024 +0100
+
+    Bump version to 2.29.0
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 7ac7877fc..8c2671877 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -55,7 +55,7 @@[m [mif(WIN32)[m
+ endif()[m
+ [m
+ # Create depthai project[m
+[31m-project(depthai VERSION "2.28.0" LANGUAGES CXX C)[m
+[32m+[m[32mproject(depthai VERSION "2.29.0" LANGUAGES CXX C)[m
+ get_directory_property(has_parent PARENT_DIRECTORY)[m
+ if(has_parent)[m
+     set(DEPTHAI_VERSION ${PROJECT_VERSION} PARENT_SCOPE)[m
+
+[33mcommit 6d24dbaadb361f2975006f077e2638a37e29f565[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Mon Aug 19 10:17:59 2024 +0200
+
+    Bump version to v2.28.0
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex b097d268e..7ac7877fc 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -55,7 +55,7 @@[m [mif(WIN32)[m
+ endif()[m
+ [m
+ # Create depthai project[m
+[31m-project(depthai VERSION "2.27.0" LANGUAGES CXX C)[m
+[32m+[m[32mproject(depthai VERSION "2.28.0" LANGUAGES CXX C)[m
+ get_directory_property(has_parent PARENT_DIRECTORY)[m
+ if(has_parent)[m
+     set(DEPTHAI_VERSION ${PROJECT_VERSION} PARENT_SCOPE)[m
+
+[33mcommit 47738b401e9254745e5eae868c93562d7a8f842c[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Tue Jun 25 19:20:10 2024 +0200
+
+    Bump the version
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 06cb9030b..b097d268e 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -55,7 +55,7 @@[m [mif(WIN32)[m
+ endif()[m
+ [m
+ # Create depthai project[m
+[31m-project(depthai VERSION "2.26.0" LANGUAGES CXX C)[m
+[32m+[m[32mproject(depthai VERSION "2.27.0" LANGUAGES CXX C)[m
+ get_directory_property(has_parent PARENT_DIRECTORY)[m
+ if(has_parent)[m
+     set(DEPTHAI_VERSION ${PROJECT_VERSION} PARENT_SCOPE)[m
+
+[33mcommit 505f8efa3222d19c37050453b83f821e9ac5d943[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Wed Jun 12 16:32:22 2024 +0200
+
+    Add support for Visual Studio 2022 version 17.10
+    
+    https://github.com/cpp-pm/hunter/pull/747
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 8e5ee2020..06cb9030b 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -44,8 +44,8 @@[m [mendif()[m
+ [m
+ include("cmake/HunterGate.cmake")[m
+ HunterGate([m
+[31m-    URL "https://github.com/cpp-pm/hunter/archive/v0.25.5.tar.gz"[m
+[31m-    SHA1 "a20151e4c0740ee7d0f9994476856d813cdead29"[m
+[32m+[m[32m    URL "https://github.com/cpp-pm/hunter/archive/9d9242b60d5236269f894efd3ddd60a9ca83dd7f.tar.gz"[m
+[32m+[m[32m    SHA1 "16cc954aa723bccd16ea45fc91a858d0c5246376"[m
+     LOCAL # Local config for dependencies[m
+ )[m
+ [m
+
+[33mcommit 512c7bad4909da5d66162ebe755cc66b0d204639[m[33m ([m[1;31morigin/fix_arm32_build[m[33m)[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Mon Jun 3 21:53:37 2024 +0200
+
+    Move the check for 32 bit
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex cd2308501..8e5ee2020 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -18,13 +18,6 @@[m [melse()[m
+     set(DEPTHAI_CURL_USE_OPENSSL ON)[m
+ endif()[m
+ [m
+[31m-# Check if on 32 bit linux - default without CURL support[m
+[31m-if(CMAKE_SIZEOF_VOID_P EQUAL 4 AND UNIX)[m
+[31m-    set(DEPTHAI_DEFAULT_CURL_SUPPORT OFF)[m
+[31m-else()[m
+[31m-    set(DEPTHAI_DEFAULT_CURL_SUPPORT ON)[m
+[31m-endif()[m
+[31m-[m
+ # Set type to canonicalize relative paths for user-provided toolchain[m
+ set(CMAKE_TOOLCHAIN_FILE "" CACHE FILEPATH "CMake toolchain path")[m
+ [m
+[36m@@ -127,6 +120,13 @@[m [melse()[m
+     endif()[m
+ endif()[m
+ [m
+[32m+[m[32m# Check if on 32 bit linux - default without CURL support[m
+[32m+[m[32mif(CMAKE_SIZEOF_VOID_P EQUAL 4 AND UNIX)[m
+[32m+[m[32m    set(DEPTHAI_DEFAULT_CURL_SUPPORT OFF)[m
+[32m+[m[32melse()[m
+[32m+[m[32m    set(DEPTHAI_DEFAULT_CURL_SUPPORT ON)[m
+[32m+[m[32mendif()[m
+[32m+[m
+ option(DEPTHAI_ENABLE_CURL "Enable CURL support" ${DEPTHAI_DEFAULT_CURL_SUPPORT})[m
+ message(STATUS "CURL support: ${DEPTHAI_ENABLE_CURL}")[m
+ [m
+
+[33mcommit 34c118b05a7ad6c5165f545604d22cca955199fb[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Mon Jun 3 21:48:04 2024 +0200
+
+    Add a cmake print
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 291949595..cd2308501 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -128,6 +128,7 @@[m [melse()[m
+ endif()[m
+ [m
+ option(DEPTHAI_ENABLE_CURL "Enable CURL support" ${DEPTHAI_DEFAULT_CURL_SUPPORT})[m
+[32m+[m[32mmessage(STATUS "CURL support: ${DEPTHAI_ENABLE_CURL}")[m
+ [m
+ # Force Colored output when using Ninja[m
+ # Global option - affects all targets[m
+
+[33mcommit fa41447ee5ee671b40c5e0ff9064ec956dcdc614[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Mon Jun 3 21:40:14 2024 +0200
+
+    Default to no curl support on ARM32
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 50221308d..291949595 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -18,6 +18,13 @@[m [melse()[m
+     set(DEPTHAI_CURL_USE_OPENSSL ON)[m
+ endif()[m
+ [m
+[32m+[m[32m# Check if on 32 bit linux - default without CURL support[m
+[32m+[m[32mif(CMAKE_SIZEOF_VOID_P EQUAL 4 AND UNIX)[m
+[32m+[m[32m    set(DEPTHAI_DEFAULT_CURL_SUPPORT OFF)[m
+[32m+[m[32melse()[m
+[32m+[m[32m    set(DEPTHAI_DEFAULT_CURL_SUPPORT ON)[m
+[32m+[m[32mendif()[m
+[32m+[m
+ # Set type to canonicalize relative paths for user-provided toolchain[m
+ set(CMAKE_TOOLCHAIN_FILE "" CACHE FILEPATH "CMake toolchain path")[m
+ [m
+[36m@@ -120,7 +127,7 @@[m [melse()[m
+     endif()[m
+ endif()[m
+ [m
+[31m-option(DEPTHAI_ENABLE_CURL "Enable CURL support" ON)[m
+[32m+[m[32moption(DEPTHAI_ENABLE_CURL "Enable CURL support" ${DEPTHAI_DEFAULT_CURL_SUPPORT})[m
+ [m
+ # Force Colored output when using Ninja[m
+ # Global option - affects all targets[m
+
+[33mcommit 91efdbd364acdfbf0df64992f55e395ab02004d1[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Sat Jun 1 09:43:10 2024 +0200
+
+    Don't build OPENSSL on windows
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 7dc49d27e..50221308d 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -12,8 +12,10 @@[m [moption(DEPTHAI_ENABLE_LIBUSB "Enable usage of libusb and interaction with USB de[m
+ # Set to use native tls for windows before including Hunter (used for Curl)[m
+ if(WIN32)[m
+     set(DEPTHAI_CURL_USE_SCHANNEL ON)[m
+[32m+[m[32m    set(DEPTHAI_CURL_USE_OPENSSL OFF)[m
+ else()[m
+     set(DEPTHAI_CURL_USE_SCHANNEL OFF)[m
+[32m+[m[32m    set(DEPTHAI_CURL_USE_OPENSSL ON)[m
+ endif()[m
+ [m
+ # Set type to canonicalize relative paths for user-provided toolchain[m
+
+[33mcommit 7cf9ee2b59ef646dab43745d304b6525d478cedf[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Fri May 31 23:43:21 2024 +0200
+
+    Rename to enable curl
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 425b1ec9e..7dc49d27e 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -118,6 +118,8 @@[m [melse()[m
+     endif()[m
+ endif()[m
+ [m
+[32m+[m[32moption(DEPTHAI_ENABLE_CURL "Enable CURL support" ON)[m
+[32m+[m
+ # Force Colored output when using Ninja[m
+ # Global option - affects all targets[m
+ option(FORCE_COLORED_OUTPUT "Always produce ANSI-colored output (GNU/Clang only)" OFF)[m
+[36m@@ -467,12 +469,12 @@[m [mtarget_link_libraries(${TARGET_CORE_NAME}[m
+         ghcFilesystem::ghc_filesystem[m
+ )[m
+ [m
+[31m-if(DEPTHAI_CURL_SUPPORT)[m
+[32m+[m[32mif(DEPTHAI_ENABLE_CURL)[m
+     target_link_libraries(${TARGET_CORE_NAME} PRIVATE[m
+         CURL::libcurl[m
+         cpr::cpr[m
+     )[m
+[31m-    target_compile_definitions(${TARGET_CORE_NAME} PRIVATE DEPTHAI_CURL_SUPPORT)[m
+[32m+[m[32m    target_compile_definitions(${TARGET_CORE_NAME} PRIVATE DEPTHAI_ENABLE_CURL)[m
+ endif()[m
+ [m
+ # Add compile & CMake definitions[m
+
+[33mcommit f588e47039daaa8b43d5244030bdde70306b6bde[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Fri May 31 20:36:10 2024 +0200
+
+    Code cleanup
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex aacbc87c5..425b1ec9e 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -106,13 +106,6 @@[m [mset(DEPTHAI_XLINK_LOCAL "" CACHE STRING "Path to local XLink source to use inste[m
+ set(DEPTHAI_SHARED_LOCAL "" CACHE STRING "Path to local depthai-shared source to use instead of submodule")[m
+ set(DEPTHAI_BOOTLOADER_SHARED_LOCAL "" CACHE STRING "Path to local depthai-bootloader-shared source to use instead of submodule")[m
+ [m
+[31m-if(CMAKE_SYSTEM_PROCESSOR MATCHES "arm|armv7l")[m
+[31m-    message(STATUS "ARM 32-bit detected, disabling CURL support")[m
+[31m-    set(DEPTHAI_CURL_SUPPORT OFF CACHE BOOL "Disable CURL support on ARM 32-bit" FORCE)[m
+[31m-else()[m
+[31m-    option(DEPTHAI_CURL_SUPPORT "Enable optional CURL support" ON)[m
+[31m-endif()[m
+[31m-[m
+ # Enable backward stack printing on crash[m
+ if(ANDROID)[m
+     # Backward not supported currently on Android[m
+
+[33mcommit f1b4e2394b22a55c839d22cd83296f4d41c4ed85[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Fri May 31 18:27:34 2024 +0200
+
+    Fix build - only set SCHANNEL for windows
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 43cc9a42a..aacbc87c5 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -9,6 +9,13 @@[m [mendif()[m
+ # Early options[m
+ option(DEPTHAI_ENABLE_LIBUSB "Enable usage of libusb and interaction with USB devices" ON)[m
+ [m
+[32m+[m[32m# Set to use native tls for windows before including Hunter (used for Curl)[m
+[32m+[m[32mif(WIN32)[m
+[32m+[m[32m    set(DEPTHAI_CURL_USE_SCHANNEL ON)[m
+[32m+[m[32melse()[m
+[32m+[m[32m    set(DEPTHAI_CURL_USE_SCHANNEL OFF)[m
+[32m+[m[32mendif()[m
+[32m+[m
+ # Set type to canonicalize relative paths for user-provided toolchain[m
+ set(CMAKE_TOOLCHAIN_FILE "" CACHE FILEPATH "CMake toolchain path")[m
+ [m
+
+[33mcommit 84fb7f4c621be95e4e7c7abbaed80419587d3b1a[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Fri May 31 00:09:15 2024 +0200
+
+    Don't use CURL support on 32bit arm
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex df2763e1c..43cc9a42a 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -99,8 +99,12 @@[m [mset(DEPTHAI_XLINK_LOCAL "" CACHE STRING "Path to local XLink source to use inste[m
+ set(DEPTHAI_SHARED_LOCAL "" CACHE STRING "Path to local depthai-shared source to use instead of submodule")[m
+ set(DEPTHAI_BOOTLOADER_SHARED_LOCAL "" CACHE STRING "Path to local depthai-bootloader-shared source to use instead of submodule")[m
+ [m
+[31m-# Optional curl support for log collection[m
+[31m-option(DEPTHAI_CURL_SUPPORT "Enable optional CURL support" ON)[m
+[32m+[m[32mif(CMAKE_SYSTEM_PROCESSOR MATCHES "arm|armv7l")[m
+[32m+[m[32m    message(STATUS "ARM 32-bit detected, disabling CURL support")[m
+[32m+[m[32m    set(DEPTHAI_CURL_SUPPORT OFF CACHE BOOL "Disable CURL support on ARM 32-bit" FORCE)[m
+[32m+[m[32melse()[m
+[32m+[m[32m    option(DEPTHAI_CURL_SUPPORT "Enable optional CURL support" ON)[m
+[32m+[m[32mendif()[m
+ [m
+ # Enable backward stack printing on crash[m
+ if(ANDROID)[m
+
+[33mcommit 5fe37cb8ae62daea8bdb4e663b7ab02c49ebd42f[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Thu May 30 12:50:21 2024 +0200
+
+    Make curl optional
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex a26b15cc4..df2763e1c 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -99,6 +99,9 @@[m [mset(DEPTHAI_XLINK_LOCAL "" CACHE STRING "Path to local XLink source to use inste[m
+ set(DEPTHAI_SHARED_LOCAL "" CACHE STRING "Path to local depthai-shared source to use instead of submodule")[m
+ set(DEPTHAI_BOOTLOADER_SHARED_LOCAL "" CACHE STRING "Path to local depthai-bootloader-shared source to use instead of submodule")[m
+ [m
+[32m+[m[32m# Optional curl support for log collection[m
+[32m+[m[32moption(DEPTHAI_CURL_SUPPORT "Enable optional CURL support" ON)[m
+[32m+[m
+ # Enable backward stack printing on crash[m
+ if(ANDROID)[m
+     # Backward not supported currently on Android[m
+[36m@@ -457,11 +460,17 @@[m [mtarget_link_libraries(${TARGET_CORE_NAME}[m
+         archive_static[m
+         spdlog::spdlog[m
+         ZLIB::zlib[m
+[31m-        CURL::libcurl[m
+[31m-        cpr::cpr[m
+         ghcFilesystem::ghc_filesystem[m
+ )[m
+ [m
+[32m+[m[32mif(DEPTHAI_CURL_SUPPORT)[m
+[32m+[m[32m    target_link_libraries(${TARGET_CORE_NAME} PRIVATE[m
+[32m+[m[32m        CURL::libcurl[m
+[32m+[m[32m        cpr::cpr[m
+[32m+[m[32m    )[m
+[32m+[m[32m    target_compile_definitions(${TARGET_CORE_NAME} PRIVATE DEPTHAI_CURL_SUPPORT)[m
+[32m+[m[32mendif()[m
+[32m+[m
+ # Add compile & CMake definitions[m
+ set(DEPTHAI_DEVICE_VERSION "${DEPTHAI_DEVICE_SIDE_COMMIT}")[m
+ target_compile_definitions(${TARGET_CORE_NAME}[m
+
+[33mcommit a960f8b6fd67b2bab2372e03146341394a7ef721[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Thu May 30 00:37:59 2024 +0200
+
+    Update CURL
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 6ce1b16ab..a26b15cc4 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -35,8 +35,8 @@[m [mendif()[m
+ [m
+ include("cmake/HunterGate.cmake")[m
+ HunterGate([m
+[31m-    URL "https://github.com/cpp-pm/hunter/archive/v0.23.322.tar.gz"[m
+[31m-    SHA1 "cb0ea1f74f4a2c49a807de34885743495fccccbe"[m
+[32m+[m[32m    URL "https://github.com/cpp-pm/hunter/archive/v0.25.5.tar.gz"[m
+[32m+[m[32m    SHA1 "a20151e4c0740ee7d0f9994476856d813cdead29"[m
+     LOCAL # Local config for dependencies[m
+ )[m
+ [m
+
+[33mcommit 11657a54afa622201564c0d3248424082fa176cf[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Wed May 29 18:38:50 2024 +0200
+
+    Remove cryptocpp dependency
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 4856cba5a..6ce1b16ab 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -457,7 +457,6 @@[m [mtarget_link_libraries(${TARGET_CORE_NAME}[m
+         archive_static[m
+         spdlog::spdlog[m
+         ZLIB::zlib[m
+[31m-        cryptopp-static[m
+         CURL::libcurl[m
+         cpr::cpr[m
+         ghcFilesystem::ghc_filesystem[m
+
+[33mcommit b1a473386ca11e5ac3e066497db3e98267884bf8[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Wed May 29 14:56:37 2024 +0200
+
+    Add log reporting
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex c68a04c96..4856cba5a 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -266,6 +266,7 @@[m [madd_library(${TARGET_CORE_NAME}[m
+     src/utility/XLinkGlobalProfilingLogger.cpp[m
+     src/utility/Logging.cpp[m
+     src/utility/EepromDataParser.cpp[m
+[32m+[m[32m    src/utility/LogCollection.cpp[m
+     src/xlink/XLinkConnection.cpp[m
+     src/xlink/XLinkStream.cpp[m
+     src/openvino/OpenVINO.cpp[m
+[36m@@ -456,6 +457,10 @@[m [mtarget_link_libraries(${TARGET_CORE_NAME}[m
+         archive_static[m
+         spdlog::spdlog[m
+         ZLIB::zlib[m
+[32m+[m[32m        cryptopp-static[m
+[32m+[m[32m        CURL::libcurl[m
+[32m+[m[32m        cpr::cpr[m
+[32m+[m[32m        ghcFilesystem::ghc_filesystem[m
+ )[m
+ [m
+ # Add compile & CMake definitions[m
+
+[33mcommit b6318d048c9c4f4a86b7871f435413dd590fc678[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Fri May 24 19:53:14 2024 +0200
+
+    Bump version to v2.26.0
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 2cc51767f..c68a04c96 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -46,7 +46,7 @@[m [mif(WIN32)[m
+ endif()[m
+ [m
+ # Create depthai project[m
+[31m-project(depthai VERSION "2.25.1" LANGUAGES CXX C)[m
+[32m+[m[32mproject(depthai VERSION "2.26.0" LANGUAGES CXX C)[m
+ get_directory_property(has_parent PARENT_DIRECTORY)[m
+ if(has_parent)[m
+     set(DEPTHAI_VERSION ${PROJECT_VERSION} PARENT_SCOPE)[m
+
+[33mcommit 9176486eb9abc591372cfbdc9b15f134a025a50a[m
+Merge: 10e6107cb f3f89396d
+Author: SzabolcsGergely <szabi@luxonis.com>
+Date:   Wed May 15 14:11:06 2024 +0300
+
+    Merge remote-tracking branch 'origin/develop' into HEAD
+
+[33mcommit f3f89396d6cfc69ccadc6d8d02effaaff2d1bb51[m
+Merge: 07e826138 9037a5acb
+Author: SzabolcsGergely <szabi@luxonis.com>
+Date:   Tue May 14 19:04:20 2024 +0300
+
+    Merge remote-tracking branch 'origin/develop' into HEAD
+
+[33mcommit 07e826138b78124f46c40b56cd5771f463a8cd54[m
+Author: SzabolcsGergely <szabi@luxonis.com>
+Date:   Mon May 13 18:11:31 2024 +0300
+
+    Refactor DepthAlign -> ImageAlign
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 7ce445302..ca509387b 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -219,7 +219,7 @@[m [madd_library(${TARGET_CORE_NAME}[m
+     src/pipeline/node/DetectionNetwork.cpp[m
+     src/pipeline/node/Script.cpp[m
+     src/pipeline/node/SpatialDetectionNetwork.cpp[m
+[31m-    src/pipeline/node/DepthAlign.cpp[m
+[32m+[m[32m    src/pipeline/node/ImageAlign.cpp[m
+     src/pipeline/node/SystemLogger.cpp[m
+     src/pipeline/node/SpatialLocationCalculator.cpp[m
+     src/pipeline/node/AprilTag.cpp[m
+[36m@@ -251,7 +251,7 @@[m [madd_library(${TARGET_CORE_NAME}[m
+     src/pipeline/datatype/EdgeDetectorConfig.cpp[m
+     src/pipeline/datatype/TrackedFeatures.cpp[m
+     src/pipeline/datatype/FeatureTrackerConfig.cpp[m
+[31m-    src/pipeline/datatype/DepthAlignConfig.cpp[m
+[32m+[m[32m    src/pipeline/datatype/ImageAlignConfig.cpp[m
+     src/pipeline/datatype/ToFConfig.cpp[m
+     src/pipeline/datatype/PointCloudConfig.cpp[m
+     src/pipeline/datatype/PointCloudData.cpp[m
+
+[33mcommit eb1733e9c3ffc988e10d4478ccf3bd3dc1afd4ca[m
+Merge: 854b36db7 2ef170739
+Author: SzabolcsGergely <szabi@luxonis.com>
+Date:   Tue Apr 23 16:36:25 2024 +0300
+
+    Merge remote-tracking branch 'origin/depth_align_node' into HEAD
+
+[33mcommit c21bdd3746c4ad7134b67c2c75a11fbdd0a01c40[m[33m ([m[1;33mtag: [m[1;33mv2.25.1[m[33m)[m
+Author: Filip Jeretina <59307111+zrezke@users.noreply.github.com>
+Date:   Mon Apr 22 10:57:36 2024 +0200
+
+    Release 2.25.1 (#1005)
+    
+    * fix finding jsoncpp
+    
+    * FW: fix fsync for OAK-D-SR
+    
+    * Change IMU fw update status to int
+    
+    * Add tilt projection support
+    
+    * Introduced `DeviceBootloader::getFlashedVersion` to retrieve the bootloader version flashed on the device. Fixed `isUserBootloaderSupported` - thereby fixed user bootloader flashing. (#997)
+    
+    * Introduced DeviceBootloader::getFlashedVersion to retrieve the bootloader version flashed on the device. Fixed isUserBootloaderSupported - thereby fixed user bootloader flashing.
+    
+    * Applied the suggestions
+    
+    * Fix sensor configs for ov9282/ov9782 (differentiate between color/mono when possible)
+    
+    * FW: fixes for IMX378 and IMX582:
+    fix concurrent run,
+    fix scaling with IMX378 THE_1352X1012 resolution,
+    change Camera node best sensor config select to prioritize matching aspect ratio
+    
+    * Add jsoncpp with hunter
+    
+    * Make PCL include optional
+    
+    * Fixed booting issue on OAK D SR POE and OAK T. (#1002)
+    
+    * Fail loudly if PCL enabled, README changes
+    
+    * Conditionally add jsoncpp package
+    
+    * FW: fix default fsync GPIO state for OAK-FFC-4P R7,
+    FSIN_4LANE GPIO42 = input, pull-down
+    
+    * Bumped version to 2.25.1
+    
+    * Fix FFC3P - not found after booting if ov9282 is connected.
+    
+    * Make getAllConnectedDevices consistent when no devices are found
+    
+    ---------
+    
+    Co-authored-by: Serafadam <serafadam@gmail.com>
+    Co-authored-by: alex-luxonis <alex@luxonis.com>
+    Co-authored-by: asahtik <asahtik@gmail.com>
+    Co-authored-by: SzabolcsGergely <szabi@luxonis.com>
+    Co-authored-by: asahtik <38485424+asahtik@users.noreply.github.com>
+    Co-authored-by: Matevz Morato <matevz.morato@gmail.com>
+    Co-authored-by: moratom <47612463+moratom@users.noreply.github.com>
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 184a680de..405672194 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -46,7 +46,7 @@[m [mif(WIN32)[m
+ endif()[m
+ [m
+ # Create depthai project[m
+[31m-project(depthai VERSION "2.25.0" LANGUAGES CXX C)[m
+[32m+[m[32mproject(depthai VERSION "2.25.1" LANGUAGES CXX C)[m
+ get_directory_property(has_parent PARENT_DIRECTORY)[m
+ if(has_parent)[m
+     set(DEPTHAI_VERSION ${PROJECT_VERSION} PARENT_SCOPE)[m
+[36m@@ -302,7 +302,7 @@[m [moption(DEPTHAI_BUILD_TESTS "Build tests" OFF)[m
+ option(DEPTHAI_BUILD_EXAMPLES "Build examples - Requires OpenCV library to be installed" OFF)[m
+ option(DEPTHAI_BUILD_DOCS "Build documentation - requires doxygen to be installed" OFF)[m
+ option(DEPTHAI_OPENCV_SUPPORT "Enable optional OpenCV support" ON)[m
+[31m-option(DEPTHAI_PCL_SUPPORT "Enable optional PCL support" ON)[m
+[32m+[m[32moption(DEPTHAI_PCL_SUPPORT "Enable optional PCL support" OFF)[m
+ [m
+ [m
+ option(DEPTHAI_BINARIES_RESOURCE_COMPILE "Compile Depthai device side binaries into library" ON)[m
+
+[33mcommit 58a0b81b71ae09f977c256dbabcf6c249feec5d8[m
+Author: asahtik <asahtik@gmail.com>
+Date:   Mon Apr 15 13:07:30 2024 +0200
+
+    Make PCL include optional
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 184a680de..d3819db63 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -302,7 +302,7 @@[m [moption(DEPTHAI_BUILD_TESTS "Build tests" OFF)[m
+ option(DEPTHAI_BUILD_EXAMPLES "Build examples - Requires OpenCV library to be installed" OFF)[m
+ option(DEPTHAI_BUILD_DOCS "Build documentation - requires doxygen to be installed" OFF)[m
+ option(DEPTHAI_OPENCV_SUPPORT "Enable optional OpenCV support" ON)[m
+[31m-option(DEPTHAI_PCL_SUPPORT "Enable optional PCL support" ON)[m
+[32m+[m[32moption(DEPTHAI_PCL_SUPPORT "Enable optional PCL support" OFF)[m
+ [m
+ [m
+ option(DEPTHAI_BINARIES_RESOURCE_COMPILE "Compile Depthai device side binaries into library" ON)[m
+
+[33mcommit 21a2dc8c30b12817b6031623b69242123fcfdaee[m
+Author: SzabolcsGergely <szabi@luxonis.com>
+Date:   Sat Mar 23 17:41:37 2024 +0200
+
+    Add cast node
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex 184a680de..ec3c21e36 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -230,6 +230,7 @@[m [madd_library(${TARGET_CORE_NAME}[m
+     src/pipeline/node/DetectionParser.cpp[m
+     src/pipeline/node/UVC.cpp[m
+     src/pipeline/node/PointCloud.cpp[m
+[32m+[m[32m    src/pipeline/node/Cast.cpp[m
+     src/pipeline/datatype/Buffer.cpp[m
+     src/pipeline/datatype/ImgFrame.cpp[m
+     src/pipeline/datatype/EncodedFrame.cpp[m
+
+[33mcommit 8851bfde04f9edc646431682328182197d47febe[m
+Author: Matevz Morato <matevz.morato@gmail.com>
+Date:   Wed Mar 6 15:30:02 2024 +0100
+
+    Bump version to 2.25.0
+
+[1mdiff --git a/CMakeLists.txt b/CMakeLists.txt[m
+[1mindex f64d29ce4..184a680de 100644[m
+[1m--- a/CMakeLists.txt[m
+[1m+++ b/CMakeLists.txt[m
+[36m@@ -46,7 +46,7 @@[m [mif(WIN32)[m
+ endif()[m
+ [m
+ # Create depthai project[m
+[31m-project(depthai VERSION "2.24.0" LANGUAGES CXX C)[m
+[32m+[m[32mproject(depthai VERSION "2.25.0" LANGUAGES CXX C)[m
+ get_directory_property(has_parent PARENT_DIRECTORY)[m
+ if(has_parent)[m
+     set(DEPTHAI_VERSION ${PROJECT_VERSION} PARENT_SCOPE)[m
+
+[33mcommit 5ab8659e64ef906abbc5804e149d8589da1f79ac[m
+Merge: 0d23b9a32 cee531d59
+Author: SzabolcsGergely <szabi@luxonis.com>
+Date:   Mon Mar 4 17:04:20 2024 +0200
+
+   

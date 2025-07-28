@@ -1,0 +1,1955 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:41 (project)"
+    message: |
+      The system is: Linux - 6.8.0-64-generic - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:41 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:41 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:41 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-3IxL7r"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-3IxL7r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-3IxL7r'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3d4b1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3d4b1.dir/build.make CMakeFiles/cmTC_3d4b1.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-3IxL7r'
+        Building C object CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-13-Nz4ro4/gcc-13-13.3.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3d4b1.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/13/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3d4b1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccSR63WT.s
+        GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/include-fixed/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/aarch64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 4641e2542d7b0fa864451cdc7c3485d3
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3d4b1.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o /tmp/ccSR63WT.s
+        GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_3d4b1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d4b1.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o -o cmTC_3d4b1 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-13-Nz4ro4/gcc-13-13.3.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3d4b1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_3d4b1.'
+         /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cckgJWj5.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_3d4b1 /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3d4b1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_3d4b1.'
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-3IxL7r'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:41 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/aarch64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/13/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/aarch64-linux-gnu/13/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:41 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-3IxL7r']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3d4b1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_3d4b1.dir/build.make CMakeFiles/cmTC_3d4b1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-3IxL7r']
+        ignore line: [Building C object CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-13-Nz4ro4/gcc-13-13.3.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3d4b1.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/13/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3d4b1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccSR63WT.s]
+        ignore line: [GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/include-fixed/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 4641e2542d7b0fa864451cdc7c3485d3]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3d4b1.dir/']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o /tmp/ccSR63WT.s]
+        ignore line: [GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_3d4b1]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d4b1.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o -o cmTC_3d4b1 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-13-Nz4ro4/gcc-13-13.3.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3d4b1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_3d4b1.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cckgJWj5.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_3d4b1 /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cckgJWj5.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_3d4b1] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/13] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_3d4b1.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13] ==> [/usr/lib/gcc/aarch64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/13;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:41 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-TjX2WG"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-TjX2WG"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-TjX2WG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bd8bd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bd8bd.dir/build.make CMakeFiles/cmTC_bd8bd.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-TjX2WG'
+        Building CXX object CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-13-Nz4ro4/gcc-13-13.3.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_bd8bd.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/13/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_bd8bd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/cc6nezgj.s
+        GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/13"
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/include-fixed/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/13
+         /usr/include/aarch64-linux-gnu/c++/13
+         /usr/include/c++/13/backward
+         /usr/lib/gcc/aarch64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: e6eff1ab3426b92d3a3bf1dc105bfcb7
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_bd8bd.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc6nezgj.s
+        GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_bd8bd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd8bd.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_bd8bd 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-13-Nz4ro4/gcc-13-13.3.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bd8bd' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_bd8bd.'
+         /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFoENeX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_bd8bd /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bd8bd' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_bd8bd.'
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-TjX2WG'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:41 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/13]
+          add: [/usr/include/aarch64-linux-gnu/c++/13]
+          add: [/usr/include/c++/13/backward]
+          add: [/usr/lib/gcc/aarch64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/include/aarch64-linux-gnu/c++/13] ==> [/usr/include/aarch64-linux-gnu/c++/13]
+        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/13/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/aarch64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/aarch64-linux-gnu/13/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:41 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-TjX2WG']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bd8bd/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_bd8bd.dir/build.make CMakeFiles/cmTC_bd8bd.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-TjX2WG']
+        ignore line: [Building CXX object CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-13-Nz4ro4/gcc-13-13.3.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_bd8bd.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/13/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_bd8bd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/cc6nezgj.s]
+        ignore line: [GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/13"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/include-fixed/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/13]
+        ignore line: [ /usr/include/aarch64-linux-gnu/c++/13]
+        ignore line: [ /usr/include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: e6eff1ab3426b92d3a3bf1dc105bfcb7]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_bd8bd.dir/']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc6nezgj.s]
+        ignore line: [GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_bd8bd]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd8bd.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_bd8bd ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-13-Nz4ro4/gcc-13-13.3.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bd8bd' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_bd8bd.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFoENeX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_bd8bd /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccFoENeX.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_bd8bd] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/13] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_bd8bd.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13] ==> [/usr/lib/gcc/aarch64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/13;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineFortranCompiler.cmake:186 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:67 (include)"
+    message: |
+      Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+      Compiler: /usr/bin/gfortran 
+      Build flags: 
+      Id flags: -v 
+      
+      The output was:
+      0
+      Driving: /usr/bin/gfortran -v CMakeFortranCompilerId.F -l gfortran -l m -shared-libgcc
+      Using built-in specs.
+      COLLECT_GCC=/usr/bin/gfortran
+      COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper
+      OFFLOAD_TARGET_NAMES=nvptx-none
+      OFFLOAD_TARGET_DEFAULT=1
+      Target: aarch64-linux-gnu
+      Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-13-Nz4ro4/gcc-13-13.3.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+      Thread model: posix
+      Supported LTO compression algorithms: zlib zstd
+      gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+      COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a-'
+       /usr/libexec/gcc/aarch64-linux-gnu/13/f951 CMakeFortranCompilerId.F -ffixed-form -cpp=/tmp/ccZpdomB.f90 -quiet -v -imultiarch aarch64-linux-gnu CMakeFortranCompilerId.F -quiet -dumpdir a- -dumpbase CMakeFortranCompilerId.F -dumpbase-ext .F -mlittle-endian -mabi=lp64 -version -fintrinsic-modules-path /usr/lib/gcc/aarch64-linux-gnu/13/finclude -fpre-include=/usr/include/finclude/aarch64-linux-gnu/math-vector-fortran.h -o /tmp/ccgozEAi.s
+      GNU Fortran (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (aarch64-linux-gnu)
+      	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+      
+      GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+      ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+      ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/include-fixed/aarch64-linux-gnu"
+      ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/include-fixed"
+      ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include"
+      #include "..." search starts here:
+      #include <...> search starts here:
+       /usr/lib/gcc/aarch64-linux-gnu/13/finclude
+       /usr/lib/gcc/aarch64-linux-gnu/13/include
+       /usr/local/include
+       /usr/include/aarch64-linux-gnu
+       /usr/include
+      End of search list.
+      COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a-'
+       as -v -EL -mabi=lp64 -o /tmp/ccWC3uBK.o /tmp/ccgozEAi.s
+      GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+      Reading specs from /usr/lib/gcc/aarch64-linux-gnu/13/libgfortran.spec
+      rename spec lib to liborig
+      COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a-'
+      COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/13/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/
+      LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/13/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/13/../../../:/lib/:/usr/lib/
+      COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a.'
+       /usr/libexec/gcc/aarch64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cccJvK4b.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/13/../../.. /tmp/ccWC3uBK.o -lgfortran -lm -lgcc_s -lgcc -lm -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o
+      COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a.'
+      
+      
+      Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+      
+      The Fortran compiler identification is GNU, found in:
+        /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/3.28.3/CompilerIdFortran/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake/FindStandardMathLibrary.cmake:35 (CHECK_CXX_SOURCE_COMPILES)"
+      - "CMakeLists.txt:297 (find_package)"
+    checks:
+      - "Performing Test standard_math_library_linked_to_automatically"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-hNheZ3"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-hNheZ3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "standard_math_library_linked_to_automatically"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-hNheZ3'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cf2f2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cf2f2.dir/build.make CMakeFiles/cmTC_cf2f2.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-hNheZ3'
+        Building CXX object CMakeFiles/cmTC_cf2f2.dir/src.cxx.o
+        /usr/bin/c++ -Dstandard_math_library_linked_to_automatically  -std=c++14 -o CMakeFiles/cmTC_cf2f2.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-hNheZ3/src.cxx
+        Linking CXX executable cmTC_cf2f2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf2f2.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_cf2f2.dir/src.cxx.o -o cmTC_cf2f2 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-hNheZ3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:366 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_WERROR"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-a7GNrf"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-a7GNrf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_WERROR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-a7GNrf'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f000a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f000a.dir/build.make CMakeFiles/cmTC_f000a.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-a7GNrf'
+        Building CXX object CMakeFiles/cmTC_f000a.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_WERROR  -std=c++14   -Werror -o CMakeFiles/cmTC_f000a.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-a7GNrf/src.cxx
+        Linking CXX executable cmTC_f000a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f000a.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_f000a.dir/src.cxx.o -o cmTC_f000a 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-a7GNrf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:370 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_pedantic"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-nlxA4Z"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-nlxA4Z"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_pedantic"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-nlxA4Z'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_64b28/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_64b28.dir/build.make CMakeFiles/cmTC_64b28.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-nlxA4Z'
+        Building CXX object CMakeFiles/cmTC_64b28.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_pedantic  -Werror -std=c++14   -pedantic -o CMakeFiles/cmTC_64b28.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-nlxA4Z/src.cxx
+        Linking CXX executable cmTC_64b28
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64b28.dir/link.txt --verbose=1
+        /usr/bin/c++  -Werror CMakeFiles/cmTC_64b28.dir/src.cxx.o -o cmTC_64b28 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-nlxA4Z'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:371 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wall"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-3uaFCp"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-3uaFCp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-3uaFCp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f57c9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f57c9.dir/build.make CMakeFiles/cmTC_f57c9.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-3uaFCp'
+        Building CXX object CMakeFiles/cmTC_f57c9.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wall  -pedantic -Werror -std=c++14   -Wall -o CMakeFiles/cmTC_f57c9.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-3uaFCp/src.cxx
+        Linking CXX executable cmTC_f57c9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f57c9.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Werror CMakeFiles/cmTC_f57c9.dir/src.cxx.o -o cmTC_f57c9 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-3uaFCp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:372 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wextra"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-q72UPR"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-q72UPR"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-q72UPR'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eaafe/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_eaafe.dir/build.make CMakeFiles/cmTC_eaafe.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-q72UPR'
+        Building CXX object CMakeFiles/cmTC_eaafe.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wextra  -pedantic -Wall -Werror -std=c++14   -Wextra -o CMakeFiles/cmTC_eaafe.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-q72UPR/src.cxx
+        Linking CXX executable cmTC_eaafe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eaafe.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Werror CMakeFiles/cmTC_eaafe.dir/src.cxx.o -o cmTC_eaafe 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-q72UPR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:374 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wundef"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-BeR6ia"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-BeR6ia"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wundef"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-BeR6ia'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c08c9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c08c9.dir/build.make CMakeFiles/cmTC_c08c9.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-BeR6ia'
+        Building CXX object CMakeFiles/cmTC_c08c9.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wundef  -pedantic -Wall -Wextra -Werror -std=c++14   -Wundef -o CMakeFiles/cmTC_c08c9.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-BeR6ia/src.cxx
+        Linking CXX executable cmTC_c08c9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c08c9.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Werror CMakeFiles/cmTC_c08c9.dir/src.cxx.o -o cmTC_c08c9 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-BeR6ia'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:375 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wcastalign"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-BC9xyf"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-BC9xyf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wcastalign"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-BC9xyf'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_50618/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_50618.dir/build.make CMakeFiles/cmTC_50618.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-BC9xyf'
+        Building CXX object CMakeFiles/cmTC_50618.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wcastalign  -pedantic -Wall -Wextra -Wundef -Werror -std=c++14   -Wcast-align -o CMakeFiles/cmTC_50618.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-BC9xyf/src.cxx
+        Linking CXX executable cmTC_50618
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50618.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Werror CMakeFiles/cmTC_50618.dir/src.cxx.o -o cmTC_50618 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-BC9xyf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:376 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wcharsubscripts"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-kEJvuk"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-kEJvuk"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wcharsubscripts"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-kEJvuk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f0587/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f0587.dir/build.make CMakeFiles/cmTC_f0587.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-kEJvuk'
+        Building CXX object CMakeFiles/cmTC_f0587.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wcharsubscripts  -pedantic -Wall -Wextra -Wundef -Wcast-align -Werror -std=c++14   -Wchar-subscripts -o CMakeFiles/cmTC_f0587.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-kEJvuk/src.cxx
+        Linking CXX executable cmTC_f0587
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0587.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Werror CMakeFiles/cmTC_f0587.dir/src.cxx.o -o cmTC_f0587 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-kEJvuk'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:377 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wnonvirtualdtor"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-UIqSbm"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-UIqSbm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wnonvirtualdtor"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-UIqSbm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_82e2f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_82e2f.dir/build.make CMakeFiles/cmTC_82e2f.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-UIqSbm'
+        Building CXX object CMakeFiles/cmTC_82e2f.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wnonvirtualdtor  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Werror -std=c++14   -Wnon-virtual-dtor -o CMakeFiles/cmTC_82e2f.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-UIqSbm/src.cxx
+        Linking CXX executable cmTC_82e2f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82e2f.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Werror CMakeFiles/cmTC_82e2f.dir/src.cxx.o -o cmTC_82e2f 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-UIqSbm'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:378 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wunusedlocaltypedefs"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-P90e7L"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-P90e7L"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wunusedlocaltypedefs"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-P90e7L'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_21afa/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_21afa.dir/build.make CMakeFiles/cmTC_21afa.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-P90e7L'
+        Building CXX object CMakeFiles/cmTC_21afa.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wunusedlocaltypedefs  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Werror -std=c++14   -Wunused-local-typedefs -o CMakeFiles/cmTC_21afa.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-P90e7L/src.cxx
+        Linking CXX executable cmTC_21afa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21afa.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Werror CMakeFiles/cmTC_21afa.dir/src.cxx.o -o cmTC_21afa 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-P90e7L'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:379 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wpointerarith"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-L3EGu7"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-L3EGu7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wpointerarith"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-L3EGu7'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4beb3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4beb3.dir/build.make CMakeFiles/cmTC_4beb3.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-L3EGu7'
+        Building CXX object CMakeFiles/cmTC_4beb3.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wpointerarith  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Werror -std=c++14   -Wpointer-arith -o CMakeFiles/cmTC_4beb3.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-L3EGu7/src.cxx
+        Linking CXX executable cmTC_4beb3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4beb3.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Werror CMakeFiles/cmTC_4beb3.dir/src.cxx.o -o cmTC_4beb3 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-L3EGu7'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:380 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wwritestrings"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-P0PYJo"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-P0PYJo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wwritestrings"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-P0PYJo'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9199b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9199b.dir/build.make CMakeFiles/cmTC_9199b.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-P0PYJo'
+        Building CXX object CMakeFiles/cmTC_9199b.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wwritestrings  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Werror -std=c++14   -Wwrite-strings -o CMakeFiles/cmTC_9199b.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-P0PYJo/src.cxx
+        Linking CXX executable cmTC_9199b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9199b.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Werror CMakeFiles/cmTC_9199b.dir/src.cxx.o -o cmTC_9199b 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-P0PYJo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:381 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wformatsecurity"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-muQB2i"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-muQB2i"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wformatsecurity"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-muQB2i'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a8e27/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a8e27.dir/build.make CMakeFiles/cmTC_a8e27.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-muQB2i'
+        Building CXX object CMakeFiles/cmTC_a8e27.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wformatsecurity  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Werror -std=c++14   -Wformat-security -o CMakeFiles/cmTC_a8e27.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-muQB2i/src.cxx
+        Linking CXX executable cmTC_a8e27
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8e27.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Werror CMakeFiles/cmTC_a8e27.dir/src.cxx.o -o cmTC_a8e27 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-muQB2i'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:382 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wshorten64to32"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-fwowHO"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-fwowHO"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wshorten64to32"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-fwowHO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ae9d5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ae9d5.dir/build.make CMakeFiles/cmTC_ae9d5.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-fwowHO'
+        Building CXX object CMakeFiles/cmTC_ae9d5.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wshorten64to32  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Werror -std=c++14   -Wshorten-64-to-32 -o CMakeFiles/cmTC_ae9d5.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-fwowHO/src.cxx
+        c++: error: unrecognized command-line option '-Wshorten-64-to-32'
+        gmake[1]: *** [CMakeFiles/cmTC_ae9d5.dir/build.make:78: CMakeFiles/cmTC_ae9d5.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-fwowHO'
+        gmake: *** [Makefile:127: cmTC_ae9d5/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:383 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wlogicalop"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-Hy1XCV"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-Hy1XCV"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wlogicalop"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-Hy1XCV'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5484f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5484f.dir/build.make CMakeFiles/cmTC_5484f.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-Hy1XCV'
+        Building CXX object CMakeFiles/cmTC_5484f.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wlogicalop  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Werror -std=c++14   -Wlogical-op -o CMakeFiles/cmTC_5484f.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-Hy1XCV/src.cxx
+        Linking CXX executable cmTC_5484f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5484f.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Werror CMakeFiles/cmTC_5484f.dir/src.cxx.o -o cmTC_5484f 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-Hy1XCV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:384 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wenumconversion"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-V2sNfd"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-V2sNfd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wenumconversion"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-V2sNfd'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b3c0b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b3c0b.dir/build.make CMakeFiles/cmTC_b3c0b.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-V2sNfd'
+        Building CXX object CMakeFiles/cmTC_b3c0b.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wenumconversion  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Werror -std=c++14   -Wenum-conversion -o CMakeFiles/cmTC_b3c0b.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-V2sNfd/src.cxx
+        Linking CXX executable cmTC_b3c0b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3c0b.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Werror CMakeFiles/cmTC_b3c0b.dir/src.cxx.o -o cmTC_b3c0b 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-V2sNfd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:385 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wcpp11extensions"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-l6HybJ"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-l6HybJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wcpp11extensions"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-l6HybJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_80a67/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_80a67.dir/build.make CMakeFiles/cmTC_80a67.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-l6HybJ'
+        Building CXX object CMakeFiles/cmTC_80a67.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wcpp11extensions  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Werror -std=c++14   -Wc++11-extensions -o CMakeFiles/cmTC_80a67.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-l6HybJ/src.cxx
+        Linking CXX executable cmTC_80a67
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80a67.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Werror CMakeFiles/cmTC_80a67.dir/src.cxx.o -o cmTC_80a67 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-l6HybJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:386 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wdoublepromotion"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-h4hyl9"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-h4hyl9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wdoublepromotion"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-h4hyl9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4412f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4412f.dir/build.make CMakeFiles/cmTC_4412f.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-h4hyl9'
+        Building CXX object CMakeFiles/cmTC_4412f.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wdoublepromotion  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Werror -std=c++14   -Wdouble-promotion -o CMakeFiles/cmTC_4412f.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-h4hyl9/src.cxx
+        Linking CXX executable cmTC_4412f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4412f.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Werror CMakeFiles/cmTC_4412f.dir/src.cxx.o -o cmTC_4412f 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-h4hyl9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:388 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wshadow"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-5hFmWm"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-5hFmWm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wshadow"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-5hFmWm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ad3cf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ad3cf.dir/build.make CMakeFiles/cmTC_ad3cf.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-5hFmWm'
+        Building CXX object CMakeFiles/cmTC_ad3cf.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wshadow  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Werror -std=c++14   -Wshadow -o CMakeFiles/cmTC_ad3cf.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-5hFmWm/src.cxx
+        Linking CXX executable cmTC_ad3cf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad3cf.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Werror CMakeFiles/cmTC_ad3cf.dir/src.cxx.o -o cmTC_ad3cf 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-5hFmWm'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:389 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wnopsabi"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lbhDwk"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lbhDwk"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wnopsabi"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lbhDwk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ca956/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ca956.dir/build.make CMakeFiles/cmTC_ca956.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lbhDwk'
+        Building CXX object CMakeFiles/cmTC_ca956.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wnopsabi  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Werror -std=c++14   -Wno-psabi -o CMakeFiles/cmTC_ca956.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lbhDwk/src.cxx
+        Linking CXX executable cmTC_ca956
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca956.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Werror CMakeFiles/cmTC_ca956.dir/src.cxx.o -o cmTC_ca956 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lbhDwk'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:390 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wnovariadicmacros"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-LZ8VsT"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-LZ8VsT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wnovariadicmacros"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-LZ8VsT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1e1a0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1e1a0.dir/build.make CMakeFiles/cmTC_1e1a0.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-LZ8VsT'
+        Building CXX object CMakeFiles/cmTC_1e1a0.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wnovariadicmacros  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Werror -std=c++14   -Wno-variadic-macros -o CMakeFiles/cmTC_1e1a0.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-LZ8VsT/src.cxx
+        Linking CXX executable cmTC_1e1a0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e1a0.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Werror CMakeFiles/cmTC_1e1a0.dir/src.cxx.o -o cmTC_1e1a0 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-LZ8VsT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:391 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wnolonglong"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-fc21Uv"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-fc21Uv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wnolonglong"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-fc21Uv'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2d2f4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2d2f4.dir/build.make CMakeFiles/cmTC_2d2f4.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-fc21Uv'
+        Building CXX object CMakeFiles/cmTC_2d2f4.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wnolonglong  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Werror -std=c++14   -Wno-long-long -o CMakeFiles/cmTC_2d2f4.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-fc21Uv/src.cxx
+        Linking CXX executable cmTC_2d2f4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d2f4.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Werror CMakeFiles/cmTC_2d2f4.dir/src.cxx.o -o cmTC_2d2f4 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-fc21Uv'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:392 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_fnocommon"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-eMAZD9"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-eMAZD9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_fnocommon"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-eMAZD9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dc82d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dc82d.dir/build.make CMakeFiles/cmTC_dc82d.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-eMAZD9'
+        Building CXX object CMakeFiles/cmTC_dc82d.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_fnocommon  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -Werror -std=c++14   -fno-common -o CMakeFiles/cmTC_dc82d.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-eMAZD9/src.cxx
+        Linking CXX executable cmTC_dc82d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc82d.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -Werror CMakeFiles/cmTC_dc82d.dir/src.cxx.o -o cmTC_dc82d 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-eMAZD9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:393 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_fstrictaliasing"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-bkomjA"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-bkomjA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_fstrictaliasing"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-bkomjA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ecdc7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ecdc7.dir/build.make CMakeFiles/cmTC_ecdc7.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-bkomjA'
+        Building CXX object CMakeFiles/cmTC_ecdc7.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_fstrictaliasing  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common -Werror -std=c++14   -fstrict-aliasing -o CMakeFiles/cmTC_ecdc7.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-bkomjA/src.cxx
+        Linking CXX executable cmTC_ecdc7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecdc7.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common -Werror CMakeFiles/cmTC_ecdc7.dir/src.cxx.o -o cmTC_ecdc7 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-bkomjA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:394 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_wd981"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-zzb3r0"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-zzb3r0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_wd981"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-zzb3r0'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_06cdb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_06cdb.dir/build.make CMakeFiles/cmTC_06cdb.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-zzb3r0'
+        Building CXX object CMakeFiles/cmTC_06cdb.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_wd981  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common -fstrict-aliasing -Werror -std=c++14   -wd981 -o CMakeFiles/cmTC_06cdb.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-zzb3r0/src.cxx
+        c++: error: unrecognized command-line option '-wd981'
+        gmake[1]: *** [CMakeFiles/cmTC_06cdb.dir/build.make:78: CMakeFiles/cmTC_06cdb.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-zzb3r0'
+        gmake: *** [Makefile:127: cmTC_06cdb/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:395 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_wd2304"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-vZr9Ew"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-vZr9Ew"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_wd2304"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-vZr9Ew'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4e5a0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4e5a0.dir/build.make CMakeFiles/cmTC_4e5a0.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-vZr9Ew'
+        Building CXX object CMakeFiles/cmTC_4e5a0.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_wd2304  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common -fstrict-aliasing -Werror -std=c++14   -wd2304 -o CMakeFiles/cmTC_4e5a0.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-vZr9Ew/src.cxx
+        c++: error: unrecognized command-line option '-wd2304'
+        gmake[1]: *** [CMakeFiles/cmTC_4e5a0.dir/build.make:78: CMakeFiles/cmTC_4e5a0.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-vZr9Ew'
+        gmake: *** [Makefile:127: cmTC_4e5a0/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:345 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:399 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_fnochecknew"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-efD49w"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-efD49w"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_fnochecknew"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-efD49w'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_52e94/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_52e94.dir/build.make CMakeFiles/cmTC_52e94.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-efD49w'
+        Building CXX object CMakeFiles/cmTC_52e94.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_fnochecknew  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common -fstrict-aliasing -Werror -std=c++14   -fno-check-new -o CMakeFiles/cmTC_52e94.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-efD49w/src.cxx
+        Linking CXX executable cmTC_52e94
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52e94.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common -fstrict-aliasing -Werror CMakeFiles/cmTC_52e94.dir/src.cxx.o -o cmTC_52e94 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-efD49w'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:535 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_OPENMP"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-psJadc"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-psJadc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common -fstrict-aliasing -fno-check-new"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_OPENMP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-psJadc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ea39e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ea39e.dir/build.make CMakeFiles/cmTC_ea39e.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-psJadc'
+        Building CXX object CMakeFiles/cmTC_ea39e.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_OPENMP  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common -fstrict-aliasing -fno-check-new  -std=c++14   -fopenmp -o CMakeFiles/cmTC_ea39e.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-psJadc/src.cxx
+        Linking CXX executable cmTC_ea39e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea39e.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common -fstrict-aliasing -fno-check-new  CMakeFiles/cmTC_ea39e.dir/src.cxx.o -o cmTC_ea39e 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-psJadc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "cmake/FindPASTIX.cmake:143 (find_dependency)"
+      - "test/CMakeLists.txt:97 (find_package)"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-KpXOhy"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-KpXOhy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-KpXOhy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fa130/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fa130.dir/build.make CMakeFiles/cmTC_fa130.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-KpXOhy'
+        Building C object CMakeFiles/cmTC_fa130.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_fa130.dir/src.c.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-KpXOhy/src.c
+        Linking C executable cmTC_fa130
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa130.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_fa130.dir/src.c.o -o cmTC_fa130 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-KpXOhy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckStructHasMember.cmake:77 (CHECK_SOURCE_COMPILES)"
+      - "cmake/FindHWLOC.cmake:324 (check_struct_has_member)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "cmake/FindPASTIX.cmake:203 (find_dependency)"
+      - "test/CMakeLists.txt:97 (find_package)"
+    checks:
+      - "Performing Test HAVE_HWLOC_PARENT_MEMBER"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-aST2XX"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-aST2XX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "HAVE_HWLOC_PARENT_MEMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-aST2XX'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e6729/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e6729.dir/build.make CMakeFiles/cmTC_e6729.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-aST2XX'
+        Building C object CMakeFiles/cmTC_e6729.dir/src.c.o
+        /usr/bin/cc -DHAVE_HWLOC_PARENT_MEMBER   -o CMakeFiles/cmTC_e6729.dir/src.c.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-aST2XX/src.c
+        Linking C executable cmTC_e6729
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6729.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_e6729.dir/src.c.o -o cmTC_e6729 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-aST2XX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckStructHasMember.cmake:77 (CHECK_SOURCE_COMPILES)"
+      - "cmake/FindHWLOC.cmake:325 (check_struct_has_member)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "cmake/FindPASTIX.cmake:203 (find_dependency)"
+      - "test/CMakeLists.txt:97 (find_package)"
+    checks:
+      - "Performing Test HAVE_HWLOC_CACHE_ATTR"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-8q91xm"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-8q91xm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "HAVE_HWLOC_CACHE_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-8q91xm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_da3c6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_da3c6.dir/build.make CMakeFiles/cmTC_da3c6.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-8q91xm'
+        Building C object CMakeFiles/cmTC_da3c6.dir/src.c.o
+        /usr/bin/cc -DHAVE_HWLOC_CACHE_ATTR   -o CMakeFiles/cmTC_da3c6.dir/src.c.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-8q91xm/src.c
+        Linking C executable cmTC_da3c6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da3c6.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_da3c6.dir/src.c.o -o cmTC_da3c6 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-8q91xm'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake/FindHWLOC.cmake:326 (check_c_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "cmake/FindPASTIX.cmake:203 (find_dependency)"
+      - "test/CMakeLists.txt:97 (find_package)"
+    checks:
+      - "Performing Test HAVE_HWLOC_OBJ_PU"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lWKuX4"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lWKuX4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "HAVE_HWLOC_OBJ_PU"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lWKuX4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_66ed8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_66ed8.dir/build.make CMakeFiles/cmTC_66ed8.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lWKuX4'
+        Building C object CMakeFiles/cmTC_66ed8.dir/src.c.o
+        /usr/bin/cc -DHAVE_HWLOC_OBJ_PU   -o CMakeFiles/cmTC_66ed8.dir/src.c.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lWKuX4/src.c
+        Linking C executable cmTC_66ed8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66ed8.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_66ed8.dir/src.c.o -o cmTC_66ed8 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lWKuX4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "cmake/FindHWLOC.cmake:329 (check_library_exists)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "cmake/FindPASTIX.cmake:203 (find_dependency)"
+      - "test/CMakeLists.txt:97 (find_package)"
+    checks:
+      - "Looking for hwloc_bitmap_free in hwloc"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-0w1pCy"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-0w1pCy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "HAVE_HWLOC_BITMAP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-0w1pCy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9db58/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9db58.dir/build.make CMakeFiles/cmTC_9db58.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-0w1pCy'
+        Building C object CMakeFiles/cmTC_9db58.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=hwloc_bitmap_free -o CMakeFiles/cmTC_9db58.dir/CheckFunctionExists.c.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-0w1pCy/CheckFunctionExists.c
+        Linking C executable cmTC_9db58
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9db58.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=hwloc_bitmap_free CMakeFiles/cmTC_9db58.dir/CheckFunctionExists.c.o -o cmTC_9db58  -lhwloc 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-0w1pCy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFortranFunctionExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindBLAS.cmake:370 (check_fortran_function_exists)"
+      - "/usr/share/cmake-3.28/Modules/FindBLAS.cmake:416 (check_blas_libraries)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "cmake/FindBLASEXT.cmake:54 (find_dependency)"
+      - "cmake/FindBLASEXT.cmake:87 (find_package_blas)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "cmake/FindPASTIX.cmake:214 (find_dependency)"
+      - "test/CMakeLists.txt:97 (find_package)"
+    checks:
+      - "Looking for Fortran sgemm"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-XEukFZ"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-XEukFZ"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: ""
+      CMAKE_Fortran_FLAGS_DEBUG: "-g"
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "BLAS_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-XEukFZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ef6a9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ef6a9.dir/build.make CMakeFiles/cmTC_ef6a9.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-XEukFZ'
+        Building Fortran object CMakeFiles/cmTC_ef6a9.dir/testFortranCompiler.f.o
+        /usr/bin/gfortran    -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-XEukFZ/testFortranCompiler.f -o CMakeFiles/cmTC_ef6a9.dir/testFortranCompiler.f.o
+        Linking Fortran executable cmTC_ef6a9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef6a9.dir/link.txt --verbose=1
+        /usr/bin/gfortran CMakeFiles/cmTC_ef6a9.dir/testFortranCompiler.f.o -o cmTC_ef6a9 
+        /usr/bin/ld: CMakeFiles/cmTC_ef6a9.dir/testFortranCompiler.f.o: in function `MAIN__':
+        testFortranCompiler.f:(.text+0x8): undefined reference to `sgemm_'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_ef6a9.dir/build.make:99: cmTC_ef6a9] Error 1
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-XEukFZ'
+        gmake: *** [Makefile:127: cmTC_ef6a9/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFortranFunctionExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindBLAS.cmake:370 (check_fortran_function_exists)"
+      - "/usr/share/cmake-3.28/Modules/FindBLAS.cmake:1318 (check_blas_libraries)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "cmake/FindBLASEXT.cmake:54 (find_dependency)"
+      - "cmake/FindBLASEXT.cmake:87 (find_package_blas)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "cmake/FindPASTIX.cmake:214 (find_dependency)"
+      - "test/CMakeLists.txt:97 (find_package)"
+    checks:
+      - "Looking for Fortran sgemm"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-KVxi07"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-KVxi07"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: ""
+      CMAKE_Fortran_FLAGS_DEBUG: "-g"
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "BLAS_blas_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-KVxi07'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a55a9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a55a9.dir/build.make CMakeFiles/cmTC_a55a9.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-KVxi07'
+        Building Fortran object CMakeFiles/cmTC_a55a9.dir/testFortranCompiler.f.o
+        /usr/bin/gfortran    -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-KVxi07/testFortranCompiler.f -o CMakeFiles/cmTC_a55a9.dir/testFortranCompiler.f.o
+        Linking Fortran executable cmTC_a55a9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a55a9.dir/link.txt --verbose=1
+        /usr/bin/gfortran CMakeFiles/cmTC_a55a9.dir/testFortranCompiler.f.o -o cmTC_a55a9  -Wl,-rpath,/usr/lib/aarch64-linux-gnu /usr/lib/aarch64-linux-gnu/libblas.so 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-KVxi07'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceRuns.cmake:93 (try_run)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "cmake/FindSCOTCH.cmake:349 (check_c_source_runs)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "cmake/FindPASTIX.cmake:293 (find_dependency)"
+      - "test/CMakeLists.txt:97 (find_package)"
+    checks:
+      - "Performing Test SCOTCH_Num_4"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-72azqW"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-72azqW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "SCOTCH_Num_4_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-72azqW'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_96a11/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_96a11.dir/build.make CMakeFiles/cmTC_96a11.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-72azqW'
+        Building C object CMakeFiles/cmTC_96a11.dir/src.c.o
+        /usr/bin/cc -DSCOTCH_Num_4   -o CMakeFiles/cmTC_96a11.dir/src.c.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-72azqW/src.c
+        /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-72azqW/src.c:4:10: fatal error: scotch.h: No such file or directory
+            4 | #include <scotch.h>
+              |          ^~~~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_96a11.dir/build.make:78: CMakeFiles/cmTC_96a11.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-72azqW'
+        gmake: *** [Makefile:127: cmTC_96a11/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "SCOTCH_Num_4_EXITCODE"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceRuns.cmake:93 (try_run)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "cmake/FindSCOTCH.cmake:351 (check_c_source_runs)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "cmake/FindPASTIX.cmake:293 (find_dependency)"
+      - "test/CMakeLists.txt:97 (find_package)"
+    checks:
+      - "Performing Test SCOTCH_Num_8"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-r9af9U"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-r9af9U"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "SCOTCH_Num_8_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-r9af9U'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ca47a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ca47a.dir/build.make CMakeFiles/cmTC_ca47a.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-r9af9U'
+        Building C object CMakeFiles/cmTC_ca47a.dir/src.c.o
+        /usr/bin/cc -DSCOTCH_Num_8   -o CMakeFiles/cmTC_ca47a.dir/src.c.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-r9af9U/src.c
+        /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-r9af9U/src.c:4:10: fatal error: scotch.h: No such file or directory
+            4 | #include <scotch.h>
+              |          ^~~~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_ca47a.dir/build.make:78: CMakeFiles/cmTC_ca47a.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-r9af9U'
+        gmake: *** [Makefile:127: cmTC_ca47a/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "SCOTCH_Num_8_EXITCODE"
+      cached: true
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "test/CMakeLists.txt:327 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_FASTMATH"
+    directories:
+      source: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lkh1dX"
+      binary: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lkh1dX"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common -fstrict-aliasing -fno-check-new"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_FASTMATH"
+      cached: true
+      stdout: |
+        Change Dir: '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lkh1dX'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0177d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0177d.dir/build.make CMakeFiles/cmTC_0177d.dir/build
+        gmake[1]: Entering directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lkh1dX'
+        Building CXX object CMakeFiles/cmTC_0177d.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_FASTMATH  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common -fstrict-aliasing -fno-check-new  -std=c++14   -ffast-math -o CMakeFiles/cmTC_0177d.dir/src.cxx.o -c /home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lkh1dX/src.cxx
+        Linking CXX executable cmTC_0177d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0177d.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-common -fstrict-aliasing -fno-check-new  CMakeFiles/cmTC_0177d.dir/src.cxx.o -o cmTC_0177d 
+        gmake[1]: Leaving directory '/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/build/CMakeFiles/CMakeScratch/TryCompile-lkh1dX'
+        
+      exitCode: 0
+...

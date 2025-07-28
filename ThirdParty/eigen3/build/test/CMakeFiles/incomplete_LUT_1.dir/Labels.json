@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/test/incomplete_LUT.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildOfficial"
+		],
+		"name" : "incomplete_LUT_1"
+	}
+}

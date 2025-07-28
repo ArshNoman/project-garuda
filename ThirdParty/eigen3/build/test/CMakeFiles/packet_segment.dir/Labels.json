@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/test/packet_segment.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildOfficial"
+		],
+		"name" : "packet_segment"
+	}
+}

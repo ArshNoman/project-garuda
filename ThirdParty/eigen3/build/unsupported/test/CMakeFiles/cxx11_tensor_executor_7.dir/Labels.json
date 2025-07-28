@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/parallels/Desktop/projects/project-garuda/ThirdParty/eigen3/unsupported/test/cxx11_tensor_executor.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildUnsupported"
+		],
+		"name" : "cxx11_tensor_executor_7"
+	}
+}
